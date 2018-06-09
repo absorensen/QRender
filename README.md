@@ -2,7 +2,7 @@ QRender by A.B. Sørensen
 
 A student project - if you have any questions or I'm using something which I'm not allowed to or need to put in credit to something, please don't hesitate to contant med at s125010@student.dtu.dk.
 A base real-time renderer will be implemented and then I will go on to implement more features.
-It will be implemented with Visual Studio 2017, OpenGL, C++ and an NVidia GTX970 GPU.
+It will be implemented with Visual Studio 2017, OpenGL 3.3, C++ and an NVidia GTX970 GPU.
 
 Dependencies:
 
