@@ -171,6 +171,11 @@ int main()
 		glfwPollEvents();
 	}
 
+	// de-allocate resources
+	glDeleteVertexArrays(1, &VAO);
+	glDeleteBuffers(1, &VBO);
+	glDeleteBuffers(1, &EBO);
+
 	// deallocate
 	glfwTerminate();
 	return 0;
