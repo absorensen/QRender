@@ -1,7 +1,7 @@
 ﻿  QuixoteRenderer.cpp
 LINK : warning LNK4098: defaultlib 'MSVCRTD' conflicts with use of other libs; use /NODEFAULTLIB:library
   Generating code
-  3 of 42 functions ( 7.1%) were compiled, the rest were copied from previous compilation.
+  1 of 393 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
