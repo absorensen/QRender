@@ -20,6 +20,10 @@ and with RenderDoc for graphics debugger:
 
 https://renderdoc.org/
 
+and with stb_image for image loading:
+
+https://github.com/nothings/stb/blob/master/stb_image.h
+
 
 
 A wishlist for later:
