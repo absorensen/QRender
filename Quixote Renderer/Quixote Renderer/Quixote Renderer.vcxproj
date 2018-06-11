@@ -134,6 +134,7 @@
     <ClCompile Include="QuixoteRenderer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="QuixoteRenderer.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="stb_image.h" />
