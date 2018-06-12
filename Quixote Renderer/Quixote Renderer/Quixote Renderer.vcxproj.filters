@@ -40,16 +40,19 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="shader.vs">
-      <Filter>Source Files\Shaders</Filter>
-    </None>
-    <None Include="shader.fs">
-      <Filter>Source Files\Shaders</Filter>
-    </None>
     <None Include="simpleLight.vs">
       <Filter>Source Files\Shaders</Filter>
     </None>
     <None Include="simpleLight.fs">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="PhongShader.fs">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="PhongShader.vs">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="EmissivePhong.fs">
       <Filter>Source Files\Shaders</Filter>
     </None>
   </ItemGroup>
