@@ -46,5 +46,11 @@
     <None Include="shader.fs">
       <Filter>Source Files\Shaders</Filter>
     </None>
+    <None Include="simpleLight.vs">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="simpleLight.fs">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>
