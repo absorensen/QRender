@@ -140,13 +140,13 @@
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="DirectionalLightShader.fs" />
-    <None Include="DirectionalLightShader.vs" />
-    <None Include="EmissivePhong.fs" />
-    <None Include="PhongShader.fs" />
-    <None Include="PhongShader.vs" />
-    <None Include="simpleLight.fs" />
-    <None Include="simpleLight.vs" />
+    <None Include="DirectionalLightShader.frag" />
+    <None Include="DirectionalLightShader.vert" />
+    <None Include="EmissivePhong.frag" />
+    <None Include="PhongShader.frag" />
+    <None Include="PhongShader.vert" />
+    <None Include="simpleLight.frag" />
+    <None Include="simpleLight.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

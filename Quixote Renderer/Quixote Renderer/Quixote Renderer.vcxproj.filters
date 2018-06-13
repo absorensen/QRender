@@ -40,25 +40,25 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="simpleLight.vs">
+    <None Include="DirectionalLightShader.frag">
       <Filter>Source Files\Shaders</Filter>
     </None>
-    <None Include="simpleLight.fs">
+    <None Include="DirectionalLightShader.vert">
       <Filter>Source Files\Shaders</Filter>
     </None>
-    <None Include="PhongShader.fs">
+    <None Include="EmissivePhong.frag">
       <Filter>Source Files\Shaders</Filter>
     </None>
-    <None Include="PhongShader.vs">
+    <None Include="PhongShader.frag">
       <Filter>Source Files\Shaders</Filter>
     </None>
-    <None Include="EmissivePhong.fs">
+    <None Include="PhongShader.vert">
       <Filter>Source Files\Shaders</Filter>
     </None>
-    <None Include="DirectionalLightShader.vs">
+    <None Include="simpleLight.frag">
       <Filter>Source Files\Shaders</Filter>
     </None>
-    <None Include="DirectionalLightShader.fs">
+    <None Include="simpleLight.vert">
       <Filter>Source Files\Shaders</Filter>
     </None>
   </ItemGroup>
