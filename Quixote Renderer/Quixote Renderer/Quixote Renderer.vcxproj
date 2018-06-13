@@ -145,8 +145,12 @@
     <None Include="EmissivePhong.frag" />
     <None Include="PhongShader.frag" />
     <None Include="PhongShader.vert" />
+    <None Include="PointLight.frag" />
+    <None Include="PointLight.vert" />
     <None Include="simpleLight.frag" />
     <None Include="simpleLight.vert" />
+    <None Include="SpotLight.frag" />
+    <None Include="SpotLight.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

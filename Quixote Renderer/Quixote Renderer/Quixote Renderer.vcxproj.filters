@@ -61,5 +61,17 @@
     <None Include="simpleLight.vert">
       <Filter>Source Files\Shaders</Filter>
     </None>
+    <None Include="SpotLight.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="SpotLight.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="PointLight.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="PointLight.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>
