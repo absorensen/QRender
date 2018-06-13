@@ -55,5 +55,11 @@
     <None Include="EmissivePhong.fs">
       <Filter>Source Files\Shaders</Filter>
     </None>
+    <None Include="DirectionalLightShader.vs">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="DirectionalLightShader.fs">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

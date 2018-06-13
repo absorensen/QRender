@@ -57,7 +57,7 @@ int main()
 	glEnable(GL_DEPTH_TEST);
 
 	Shader lightShader("simpleLight.vs", "simpleLight.fs");
-	Shader objectShader("PhongShader.vs", "EmissivePhong.fs");
+	Shader objectShader("PhongShader.vs", "PhongShader.fs");
 
 	float vertices[] = {
 		// positions          // normals           // texture coords
@@ -154,7 +154,7 @@ int main()
 
 	unsigned int diffuseMap = loadTexture("Resources/Textures/crate.png");
 	unsigned int specularMap = loadTexture("Resources/Textures/crate_specular.png");
-	unsigned int emissionMap = loadTexture("Resources/Textures/matrix.jpg");
+	//unsigned int emissionMap = loadTexture("Resources/Textures/matrix.jpg");
 	
 	/*
 	glGenTextures(1, &texture2);
@@ -179,7 +179,7 @@ int main()
 	objectShader.use(); 
 	objectShader.setInt("material.diffuse", 0);
 	objectShader.setInt("material.specular", 1);
-	objectShader.setInt("material.emission", 2);
+	//objectShader.setInt("material.emission", 2);
 	//ourShader.setInt("texture2", 1);
 
 
@@ -208,7 +208,7 @@ int main()
 		// LIGHTS
 		lightShader.use();
 		glm::mat4 model = glm::mat4();
-		lightPos += glm::vec3(0.01f*cos(glfwGetTime()), 0.0f, 0.01f*sin(glfwGetTime()));
+		
 		model = glm::translate(model, lightPos);
 		model = glm::scale(model, glm::vec3(0.2f));
 		lightShader.setMat4("model", model);
@@ -231,13 +231,19 @@ int main()
 		glBindTexture(GL_TEXTURE_2D, texture2);*/
 
 		objectShader.use();
-		objectShader.setVec3("objectColor", 1.0f, 0.5f, 0.31f);
+		objectShader.setVec3("objectColor", 1.0f, 1.0f, 1.0f);
 		//ourShader.setVec3("lightColor", 1.0f, 1.0f, 1.0f);
+		lightPos += glm::vec3(0.01f*cos(glfwGetTime()), 0.0f, 0.01f*sin(glfwGetTime()));
 		objectShader.setVec3("lightPos", lightPos);
 		objectShader.setVec3("viewPos", camera.Position);
+		objectShader.setVec3("light.position", lightPos);
 		objectShader.setVec3("light.ambient", 0.2f, 0.2f, 0.2f);
-		objectShader.setVec3("light.diffuse", 0.7f, 0.7f, 0.7f);
+		objectShader.setVec3("light.diffuse", 0.8f, 0.8f, 0.8f);
 		objectShader.setVec3("light.specular", 1.0f, 1.0f, 1.0f);
+		objectShader.setFloat("light.constant", 1.0f);
+		objectShader.setFloat("light.linear", 0.09f);
+		objectShader.setFloat("light.quadratic", 0.032f);
+
 
 		projection = glm::perspective(glm::radians(camera.Zoom), ASPECT_RATIO, 0.1f, 100.0f);
 		objectShader.setMat4("projection", projection);
@@ -246,27 +252,37 @@ int main()
 		objectShader.setMat4("view", view);
 
 		model = glm::mat4();
-		model = glm::translate(model, cubePositions[0]);
+		//model = glm::translate(model, cubePositions[0]);
 		float angle = 1.0f;
-		model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
-		objectShader.setMat4("model", model);
+		//model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
+		//objectShader.setMat4("model", model);
 		objectShader.setVec3("lightPos", lightPos);
-		objectShader.setVec3("material.specular", 0.5f, 0.5f, 0.5f);
+		objectShader.setVec3("material.specular", 0.7f, 0.7f, 0.7f);
 		objectShader.setFloat("material.shininess", 32.0f);
 		objectShader.setFloat("time", glfwGetTime());
+		//objectShader.setVec3("light.direction", -0.2f, -1.0f, -0.3f);
 
 		glActiveTexture(GL_TEXTURE0);
 		glBindTexture(GL_TEXTURE_2D, diffuseMap);
 		glActiveTexture(GL_TEXTURE1);
 		glBindTexture(GL_TEXTURE_2D, specularMap);
-		glActiveTexture(GL_TEXTURE2);
-		glBindTexture(GL_TEXTURE_2D, emissionMap);
+		/*glActiveTexture(GL_TEXTURE2);
+		glBindTexture(GL_TEXTURE_2D, emissionMap);*/
 
 		glBindVertexArray(VAO);
+		for (unsigned int i = 0; i < 10; i++)
+		{
+			model = glm::mat4();
+			model = glm::translate(model, cubePositions[i]);
+			float angle = 20.0f * i;
+			model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
+			objectShader.setMat4("model", model);
+
+			glDrawArrays(GL_TRIANGLES, 0, 36);
+		}
 
 
-
-		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glDrawArrays(GL_TRIANGLES, 0, 36);
 
 
 		//for (unsigned int i = 0; i < 10; ++i) {

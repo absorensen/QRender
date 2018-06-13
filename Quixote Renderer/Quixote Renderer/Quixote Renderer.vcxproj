@@ -140,6 +140,8 @@
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="DirectionalLightShader.fs" />
+    <None Include="DirectionalLightShader.vs" />
     <None Include="EmissivePhong.fs" />
     <None Include="PhongShader.fs" />
     <None Include="PhongShader.vs" />
