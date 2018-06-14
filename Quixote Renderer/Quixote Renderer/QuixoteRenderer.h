@@ -11,8 +11,15 @@
 #include "stb_image.h"
 #include "Camera.h"
 
-void framebuffer_size_callback(GLFWwindow* window, int width, int height);
-void processInput(GLFWwindow *window);
-void mouse_callback(GLFWwindow* window, double xpos, double ypos);
-void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
+void framebufferSizeCallback(GLFWwindow* window, int width, int height);
+void processInput(GLFWwindow* window);
+void mouseCallback(GLFWwindow* window, double xpos, double ypos);
+void scrollCallback(GLFWwindow* window, double xoffset, double yoffset);
+void setLamps(Shader &shader, glm::mat4 &model, glm::mat4 &view, glm::mat4 &projection, unsigned int &lightVAO);
+void setBox(Shader &shader, const glm::vec3 cubePositions[], const unsigned int diffuseMap, const unsigned int specularMap, unsigned int &cubeVAO);
+void setTransforms(Shader &shader, glm::mat4 &model, glm::mat4 &view, glm::mat4 &projection);
+void setSpotLight(Shader &shader);
+void setDirectionLight(Shader &shader);
+void setPointLights(Shader &shader, const glm::vec3 pointLightPositions[], const glm::vec3 pointLightColors[]);
+void initQuixote(GLFWwindow* window, int& error);
 unsigned int loadTexture(char const * path);

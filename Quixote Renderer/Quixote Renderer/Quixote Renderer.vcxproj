@@ -140,15 +140,17 @@
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="DirectionalLightShader.frag" />
-    <None Include="DirectionalLightShader.vert" />
+    <None Include="DirectionalLight.frag" />
+    <None Include="DirectionalLight.vert" />
     <None Include="EmissivePhong.frag" />
-    <None Include="PhongShader.frag" />
-    <None Include="PhongShader.vert" />
+    <None Include="MultipleLights.frag" />
+    <None Include="MultipleLights.vert" />
+    <None Include="Phong.frag" />
+    <None Include="Phong.vert" />
     <None Include="PointLight.frag" />
     <None Include="PointLight.vert" />
-    <None Include="simpleLight.frag" />
-    <None Include="simpleLight.vert" />
+    <None Include="Lamp.frag" />
+    <None Include="Lamp.vert" />
     <None Include="SpotLight.frag" />
     <None Include="SpotLight.vert" />
   </ItemGroup>
