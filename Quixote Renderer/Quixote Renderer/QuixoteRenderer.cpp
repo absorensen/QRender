@@ -182,7 +182,7 @@ int main()
 		// be sure to activate shader when setting uniforms/drawing objects
 		lightingShader.use();
 		setTransforms(lightingShader, model, view, projection);
-		setSpotLight(lightingShader);
+		setFlashLight(lightingShader);
 		setPointLights(lightingShader, pointLightPositions, pointLightColors);
 		setDirectionLight(lightingShader);
 		setBox(lightingShader, cubePositions, diffuseMap, specularMap, cubeVAO);
@@ -270,6 +270,7 @@ void setLamps(Shader &shader, glm::mat4 &model, glm::mat4 &view, glm::mat4 &proj
 		model = glm::translate(model, pointLightPositions[i]);
 		model = glm::scale(model, glm::vec3(0.2f)); // Make it a smaller cube
 		shader.setMat4("model", model);
+		shader.setVec3("color", pointLightColors[i]);
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 	}
 	return;
@@ -285,7 +286,7 @@ void setTransforms(Shader &shader, glm::mat4 &model, glm::mat4 &view, glm::mat4 
 }
 
 
-void setSpotLight(Shader &shader) {
+void setFlashLight(Shader &shader) {
 	shader.setVec3("spotLight.position", camera.Position);
 	shader.setVec3("spotLight.direction", camera.Front);
 	shader.setVec3("spotLight.ambient", 0.0f, 0.0f, 0.0f);

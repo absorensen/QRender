@@ -18,7 +18,7 @@ void scrollCallback(GLFWwindow* window, double xoffset, double yoffset);
 void setLamps(Shader &shader, glm::mat4 &model, glm::mat4 &view, glm::mat4 &projection, unsigned int &lightVAO);
 void setBox(Shader &shader, const glm::vec3 cubePositions[], const unsigned int diffuseMap, const unsigned int specularMap, unsigned int &cubeVAO);
 void setTransforms(Shader &shader, glm::mat4 &model, glm::mat4 &view, glm::mat4 &projection);
-void setSpotLight(Shader &shader);
+void setFlashLight(Shader &shader);
 void setDirectionLight(Shader &shader);
 void setPointLights(Shader &shader, const glm::vec3 pointLightPositions[], const glm::vec3 pointLightColors[]);
 void initQuixote(GLFWwindow* window, int& error);
