@@ -91,5 +91,11 @@
     <None Include="PointLights.vert">
       <Filter>Source Files\Shaders</Filter>
     </None>
+    <None Include="DepthTest.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="DepthTest.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

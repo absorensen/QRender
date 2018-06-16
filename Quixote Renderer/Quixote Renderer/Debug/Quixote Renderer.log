@@ -1,2 +1,3 @@
-﻿  QuixoteRenderer.cpp
-  Quixote Renderer.vcxproj -> C:\Projects\QuixoteRender\QRender\Quixote Renderer\Debug\Quixote Renderer.exe
+﻿  glad.c
+  QuixoteRenderer.cpp
+c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.h(8): fatal error C1083: Cannot open include file: 'assimp/Importer.hpp': No such file or directory

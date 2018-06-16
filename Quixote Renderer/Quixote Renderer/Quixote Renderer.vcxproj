@@ -146,6 +146,8 @@
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="DepthTest.frag" />
+    <None Include="DepthTest.vert" />
     <None Include="DirectionalLight.frag" />
     <None Include="DirectionalLight.vert" />
     <None Include="EmissivePhong.frag" />
