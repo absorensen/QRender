@@ -38,6 +38,12 @@
     <ClInclude Include="Camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="EmissivePhong.frag">
@@ -47,12 +53,6 @@
       <Filter>Source Files\Shaders</Filter>
     </None>
     <None Include="SpotLight.vert">
-      <Filter>Source Files\Shaders</Filter>
-    </None>
-    <None Include="PointLight.frag">
-      <Filter>Source Files\Shaders</Filter>
-    </None>
-    <None Include="PointLight.vert">
       <Filter>Source Files\Shaders</Filter>
     </None>
     <None Include="MultipleLights.frag">
@@ -77,6 +77,18 @@
       <Filter>Source Files\Shaders</Filter>
     </None>
     <None Include="Lamp.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="Simple.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="Simple.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="PointLights.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="PointLights.vert">
       <Filter>Source Files\Shaders</Filter>
     </None>
   </ItemGroup>

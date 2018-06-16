@@ -116,33 +116,35 @@ int main()
 	if (error == -1) return error;
 
 	Shader lampShader("Lamp.vert", "Lamp.frag");
-	Shader lightingShader("MultipleLights.vert", "MultipleLights.frag");
+	Shader ourShader("PointLights.vert", "PointLights.frag");
 	
-	// generate a Vertex Array Object
+	Model ourModel("Resources/Models/nanosuit/nanosuit.obj");
+
+	//// generate a Vertex Array Object
 	unsigned int VBO, cubeVAO;
-	glGenVertexArrays(1, &cubeVAO);
+	//glGenVertexArrays(1, &cubeVAO);
 	glGenBuffers(1, &VBO);
 
-	// bind the new vertex buffer object to the gl_array_buffer
+	//// bind the new vertex buffer object to the gl_array_buffer
 	glBindBuffer(GL_ARRAY_BUFFER, VBO);
-	// copy data to buffer
+	//// copy data to buffer
 	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
-	//glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-	//glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+	////glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+	////glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
-	// bind Vertex Array Object
-	glBindVertexArray(cubeVAO);
+	//// bind Vertex Array Object
+	//glBindVertexArray(cubeVAO);
 
-	// position attribute
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
-	glEnableVertexAttribArray(0);
-	// normal attribute
-	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3*sizeof(float)));
-	glEnableVertexAttribArray(1);
-	// texcoord attribute
-	glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
-	glEnableVertexAttribArray(2);
+	//// position attribute
+	//glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
+	//glEnableVertexAttribArray(0);
+	//// normal attribute
+	//glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3*sizeof(float)));
+	//glEnableVertexAttribArray(1);
+	//// texcoord attribute
+	//glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
+	//glEnableVertexAttribArray(2);
 
 
 	unsigned int lightVAO;
@@ -155,14 +157,14 @@ int main()
 
 
 
-	unsigned int diffuseMap = loadTexture("Resources/Textures/crate.png");
-	unsigned int specularMap = loadTexture("Resources/Textures/crate_specular.png");
-	//unsigned int emissionMap = loadTexture("Resources/Textures/matrix.jpg");
+	//unsigned int diffuseMap = loadTexture("Resources/Textures/crate.png");
+	//unsigned int specularMap = loadTexture("Resources/Textures/crate_specular.png");
+	////unsigned int emissionMap = loadTexture("Resources/Textures/matrix.jpg");
 
-	lightingShader.use();
-	lightingShader.setInt("material.diffuse", 0);
-	lightingShader.setInt("material.specular", 1);
-	//lightingShader.setInt("material.emission", 2);
+	//lightingShader.use();
+	//lightingShader.setInt("material.diffuse", 0);
+	//lightingShader.setInt("material.specular", 1);
+	////lightingShader.setInt("material.emission", 2);
 
 
 	glm::mat4 model, view, projection;
@@ -180,14 +182,30 @@ int main()
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 		// be sure to activate shader when setting uniforms/drawing objects
-		lightingShader.use();
-		setTransforms(lightingShader, model, view, projection);
-		setFlashLight(lightingShader);
-		setPointLights(lightingShader, pointLightPositions, pointLightColors);
-		setDirectionLight(lightingShader);
-		setBox(lightingShader, cubePositions, diffuseMap, specularMap, cubeVAO);
+		ourShader.use();
+		//setFlashLight(ourShader);
+		//setDirectionLight(ourShader);
+		//setBox(ourShader, cubePositions, diffuseMap, specularMap, cubeVAO);
 
+		model = glm::mat4();
+		setTransforms(ourShader, model, view, projection);
+		setPointLights(ourShader, pointLightPositions, pointLightColors);
+
+
+
+		model = glm::translate(model, glm::vec3(0.0f, -1.75f, 0.0f));
+		model = glm::scale(model, glm::vec3(0.2f, 0.2f, 0.2f));
+
+		model = glm::mat4();
+		model = glm::translate(model, glm::vec3(0.0f, -1.75f, 0.0f));
+		model = glm::scale(model, glm::vec3(0.2f, 0.2f, 0.2f));
+
+		ourShader.setMat4("model", model);
+		ourModel.Draw(ourShader);
+
+		setTransforms(lampShader, model, view, projection);
 		setLamps(lampShader, model, view, projection, lightVAO);
+
 
 		// check and call events and swap the buffers
 		glfwSwapBuffers(window);
@@ -195,9 +213,9 @@ int main()
 	}
 
 	// de-allocate resources
-	glDeleteVertexArrays(1, &cubeVAO);
-	glDeleteVertexArrays(1, &lightVAO);
-	glDeleteBuffers(1, &VBO);
+	//glDeleteVertexArrays(1, &cubeVAO);
+	//glDeleteVertexArrays(1, &lightVAO);
+	//glDeleteBuffers(1, &VBO);
 	//glDeleteBuffers(1, &EBO);
 
 	// deallocate
@@ -250,7 +268,9 @@ void setBox(Shader &shader, const glm::vec3 cubePositions[], const unsigned int 
 		model = glm::translate(model, cubePositions[i]);
 		float angle = 20.0f * i;
 		model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
+		glm::mat3 invModel = (transpose(inverse(model)));
 		shader.setMat4("model", model);
+		shader.setMat3("invModel", invModel);
 
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 	}
@@ -281,8 +301,10 @@ void setTransforms(Shader &shader, glm::mat4 &model, glm::mat4 &view, glm::mat4 
 	view = camera.GetViewMatrix();
 	shader.setMat4("projection", projection);
 	shader.setMat4("view", view);
-	shader.setMat4("model", model);
+	//shader.setMat4("model", model);
 	shader.setVec3("viewPos", camera.Position);
+	glm::mat3 invModel = (transpose(inverse(model)));
+	shader.setMat3("invModel", invModel);
 }
 
 
@@ -336,8 +358,6 @@ void processInput(GLFWwindow* window) {
 		camera.ProcessKeyboard(LEFT, deltaTime);
 	if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
 		camera.ProcessKeyboard(RIGHT, deltaTime);
-	if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS);
-	if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS);
 }
 
 void mouseCallback(GLFWwindow* window, double xpos, double ypos) {
