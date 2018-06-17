@@ -1,3 +1,4 @@
 Get Sponza working
 Do multiple textures with loaded model by default in the model class
 Create draw outlined function for objects (stencil testing)
+Face culling set per model/object
