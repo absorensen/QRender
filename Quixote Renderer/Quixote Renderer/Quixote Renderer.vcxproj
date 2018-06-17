@@ -159,10 +159,13 @@
     <None Include="PointLights.vert" />
     <None Include="Lamp.frag" />
     <None Include="Lamp.vert" />
+    <None Include="shaderSingleColor.frag" />
     <None Include="Simple.frag" />
     <None Include="Simple.vert" />
     <None Include="SpotLight.frag" />
     <None Include="SpotLight.vert" />
+    <None Include="StencilTesting.frag" />
+    <None Include="StencilTesting.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

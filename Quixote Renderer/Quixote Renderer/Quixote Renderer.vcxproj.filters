@@ -97,5 +97,14 @@
     <None Include="DepthTest.frag">
       <Filter>Source Files\Shaders</Filter>
     </None>
+    <None Include="StencilTesting.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="StencilTesting.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="shaderSingleColor.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

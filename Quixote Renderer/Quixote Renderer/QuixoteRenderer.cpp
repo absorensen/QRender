@@ -122,7 +122,8 @@ int main()
 	if (error == -1) return error;
 
 	//Shader lampShader("Lamp.vert", "Lamp.frag");
-	Shader shader("DepthTest.vert", "DepthTest.frag");
+	Shader shader("StencilTesting.vert", "StencilTesting.frag");
+	Shader shaderSingleColor("StencilTesting.vert", "shaderSingleColor.frag");
 	
 	//Model ourModel("Resources/Models/sponza/sponza.obj");
 
@@ -134,16 +135,16 @@ int main()
 	//// bind the new vertex buffer object to the gl_array_buffer
 	glBindBuffer(GL_ARRAY_BUFFER, cubeVBO);
 	//// copy data to buffer
-	glBufferData(GL_ARRAY_BUFFER, sizeof(cubeVertices), cubeVertices, GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(cubeVertices), &cubeVertices, GL_STATIC_DRAW);
 
 	//// position attribute
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
 	glEnableVertexAttribArray(0);
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
 	
 	//// texcoord attribute
-	glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
 	glEnableVertexAttribArray(1);
-
+	glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
+	glBindVertexArray(0);
 
 	//// generate a Vertex Array Object
 	unsigned int planeVAO, planeVBO;
@@ -153,16 +154,16 @@ int main()
 	//// bind the new vertex buffer object to the gl_array_buffer
 	glBindBuffer(GL_ARRAY_BUFFER, planeVBO);
 	//// copy data to buffer
-	glBufferData(GL_ARRAY_BUFFER, sizeof(planeVertices), planeVertices, GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(planeVertices), &planeVertices, GL_STATIC_DRAW);
 
 	//// position attribute
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
 	glEnableVertexAttribArray(0);
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
 
 	//// texcoord attribute
-	glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
 	glEnableVertexAttribArray(1);
-
+	glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
+	glBindVertexArray(0);
 
 	unsigned int cubeTexture = loadTexture("Resources/Textures/marble.jpg");
 	unsigned int floorTexture = loadTexture("Resources/Textures/metal.png");
@@ -189,14 +190,30 @@ int main()
 
 		// rendering commands here
 		glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
 
-		shader.use();
-		setTransforms(shader, model, view, projection);
-		//ourModel.Draw(shader);
+		shaderSingleColor.use();
+		glm::mat4 model;
+		setTransforms(shaderSingleColor, model, view, projection);
 
 
 		//// cubes
+		shader.use();
+		setTransforms(shader, model, view, projection);
+		
+		// stencil
+		glStencilMask(0x00);
+
+		// floor
+		glBindVertexArray(planeVAO);
+		glBindTexture(GL_TEXTURE_2D, floorTexture);
+		shader.setMat4("model", glm::mat4());
+		glDrawArrays(GL_TRIANGLES, 0, 6);
+		glBindVertexArray(0);
+
+		glStencilFunc(GL_ALWAYS, 1, 0xFF);
+		glStencilMask(0xFF);
+
 		glBindVertexArray(cubeVAO);
 		glActiveTexture(GL_TEXTURE0);
 		glBindTexture(GL_TEXTURE_2D, cubeTexture);
@@ -207,14 +224,30 @@ int main()
 		model = glm::translate(model, glm::vec3(2.0f, 0.0f, 0.0f));
 		shader.setMat4("model", model);
 		glDrawArrays(GL_TRIANGLES, 0, 36);
-		glDrawArrays(GL_TRIANGLES, 0, 36);
 
-		// floor
-		glBindVertexArray(planeVAO);
-		glBindTexture(GL_TEXTURE_2D, floorTexture);
-		shader.setMat4("model", glm::mat4());
-		glDrawArrays(GL_TRIANGLES, 0, 6);
+
+		glStencilFunc(GL_NOTEQUAL, 1, 0xFF);
+		glStencilMask(0x00);
+		glDisable(GL_DEPTH_TEST);
+		shaderSingleColor.use();
+		float scale = 1.1;
+
+		glBindVertexArray(cubeVAO);
+		glBindTexture(GL_TEXTURE_2D, cubeTexture);
+		model = glm::mat4();
+		model = glm::translate(model, glm::vec3(-1.0f, 0.0f, -1.0f));
+		model = glm::scale(model, glm::vec3(scale, scale, scale));
+		shaderSingleColor.setMat4("model", model);
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		model = glm::mat4();
+		model = glm::translate(model, glm::vec3(2.0f, 0.0f, 0.0f));
+		model = glm::scale(model, glm::vec3(scale, scale, scale));
+		shaderSingleColor.setMat4("model", model);
+		glDrawArrays(GL_TRIANGLES, 0, 36);
 		glBindVertexArray(0);
+		glStencilMask(0xFF);
+		glEnable(GL_DEPTH_TEST);
+
 
 		// check and call events and swap the buffers
 		glfwSwapBuffers(window);
@@ -257,6 +290,9 @@ void initQuixote(GLFWwindow* window, int& error) {
 
 	glEnable(GL_DEPTH_TEST);
 	glDepthFunc(GL_LESS);
+	glEnable(GL_STENCIL_TEST);
+	glStencilFunc(GL_NOTEQUAL, 1, 0xFF);
+	glStencilOp(GL_KEEP, GL_KEEP, GL_REPLACE);
 }
 
 void setBox(Shader &shader, const glm::vec3 cubePositions[], const unsigned int diffuseMap, const unsigned int specularMap, unsigned int &cubeVAO) {
@@ -312,9 +348,9 @@ void setTransforms(Shader &shader, glm::mat4 &model, glm::mat4 &view, glm::mat4 
 	shader.setMat4("projection", projection);
 	shader.setMat4("view", view);
 	//shader.setMat4("model", model);
-	shader.setVec3("viewPos", camera.Position);
-	glm::mat3 invModel = (transpose(inverse(model)));
-	shader.setMat3("invModel", invModel);
+	//shader.setVec3("viewPos", camera.Position);
+	//glm::mat3 invModel = (transpose(inverse(model)));
+	//shader.setMat3("invModel", invModel);
 }
 
 

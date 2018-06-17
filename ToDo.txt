@@ -1,0 +1,3 @@
+Get Sponza working
+Do multiple textures with loaded model
+Create draw outlined function for objects (stencil testing)
