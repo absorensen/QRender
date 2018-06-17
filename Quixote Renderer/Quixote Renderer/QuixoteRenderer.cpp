@@ -102,6 +102,26 @@ glm::vec3 pointLightColors[] = {
 	glm::vec3(0.2f,  0.3f, 1.0f)
 };
 
+float transparentVertices[] = {
+	// positions         // texture Coords (swapped y coordinates because texture is flipped upside down)
+	0.0f,  0.5f,  0.0f,  0.0f,  0.0f,
+	0.0f, -0.5f,  0.0f,  0.0f,  1.0f,
+	1.0f, -0.5f,  0.0f,  1.0f,  1.0f,
+
+	0.0f,  0.5f,  0.0f,  0.0f,  0.0f,
+	1.0f, -0.5f,  0.0f,  1.0f,  1.0f,
+	1.0f,  0.5f,  0.0f,  1.0f,  0.0f
+};
+
+std::vector<glm::vec3> windows
+{
+	glm::vec3(-1.5f, 0.0f, -0.48f),
+	glm::vec3(1.5f, 0.0f, 0.51f),
+	glm::vec3(0.0f, 0.0f, 0.7f),
+	glm::vec3(-0.3f, 0.0f, -2.3f),
+	glm::vec3(0.5f, 0.0f, -0.6f)
+};
+
 
 int main()
 {
@@ -122,8 +142,9 @@ int main()
 	if (error == -1) return error;
 
 	//Shader lampShader("Lamp.vert", "Lamp.frag");
-	Shader shader("StencilTesting.vert", "StencilTesting.frag");
-	Shader shaderSingleColor("StencilTesting.vert", "shaderSingleColor.frag");
+	/*Shader shader("StencilTesting.vert", "StencilTesting.frag");
+	Shader shaderSingleColor("StencilTesting.vert", "shaderSingleColor.frag");*/
+	Shader shader("Blending.vert", "Blending.frag");
 	
 	//Model ourModel("Resources/Models/sponza/sponza.obj");
 
@@ -165,8 +186,23 @@ int main()
 	glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
 	glBindVertexArray(0);
 
+
+	// grass
+	unsigned int transparentVAO, transparentVBO;
+	glGenVertexArrays(1, &transparentVAO);
+	glGenBuffers(1, &transparentVBO);
+	glBindVertexArray(transparentVAO);
+	glBindBuffer(GL_ARRAY_BUFFER, transparentVBO);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(transparentVertices), transparentVertices, GL_STATIC_DRAW);
+	glEnableVertexAttribArray(0);
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
+	glEnableVertexAttribArray(1);
+	glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
+	glBindVertexArray(0);
+
 	unsigned int cubeTexture = loadTexture("Resources/Textures/marble.jpg");
 	unsigned int floorTexture = loadTexture("Resources/Textures/metal.png");
+	unsigned int transparentTexture = loadTexture("Resources/Textures/blending_transparent_window.png");
 	////unsigned int emissionMap = loadTexture("Resources/Textures/matrix.jpg");
 
 	//lightingShader.use();
@@ -178,7 +214,9 @@ int main()
 	shader.setInt("texture1", 0);
 
 
-	glm::mat4 model, view, projection;
+	glm::mat4 model = glm::mat4(); 
+	glm::mat4 view = glm::mat4();
+	glm::mat4 projection = glm::mat4();
 	// while the window has not been closed
 	while (!glfwWindowShouldClose(window)) {
 		double currentFrame = glfwGetTime();
@@ -188,66 +226,50 @@ int main()
 		// input
 		processInput(window);
 
+		// sort transparent windows
+		std::map<float, glm::vec3> sorted;
+		for (unsigned int i = 0; i < windows.size(); ++i) {
+			float distance = glm::length(camera.Position - windows[i]);
+			sorted[distance] = windows[i];
+		}
+
 		// rendering commands here
 		glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
 
-		shaderSingleColor.use();
-		glm::mat4 model;
-		setTransforms(shaderSingleColor, model, view, projection);
-
-
-		//// cubes
 		shader.use();
 		setTransforms(shader, model, view, projection);
-		
-		// stencil
-		glStencilMask(0x00);
+
+		// cubes
+		glBindVertexArray(cubeVAO);
+		glActiveTexture(GL_TEXTURE0);
+		glBindTexture(GL_TEXTURE_2D, cubeTexture);
+		model = glm::mat4();
+		model = glm::translate(model, glm::vec3(-1.0f, 0.0f, -1.0f));
+		shader.setMat4("model", model);
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		model = glm::mat4();
+		model = glm::translate(model, glm::vec3(2.0f, 0.0f, 0.0f));
+		shader.setMat4("model", model);
+		glDrawArrays(GL_TRIANGLES, 0, 36);
 
 		// floor
 		glBindVertexArray(planeVAO);
 		glBindTexture(GL_TEXTURE_2D, floorTexture);
-		shader.setMat4("model", glm::mat4());
+		model = glm::mat4();
+		shader.setMat4("model", model);
 		glDrawArrays(GL_TRIANGLES, 0, 6);
-		glBindVertexArray(0);
 
-		glStencilFunc(GL_ALWAYS, 1, 0xFF);
-		glStencilMask(0xFF);
-
-		glBindVertexArray(cubeVAO);
-		glActiveTexture(GL_TEXTURE0);
-		glBindTexture(GL_TEXTURE_2D, cubeTexture);
-		model = glm::translate(model, glm::vec3(-1.0f, 0.0f, -1.0f));
-		shader.setMat4("model", model);
-		glDrawArrays(GL_TRIANGLES, 0, 36);
-		model = glm::mat4();
-		model = glm::translate(model, glm::vec3(2.0f, 0.0f, 0.0f));
-		shader.setMat4("model", model);
-		glDrawArrays(GL_TRIANGLES, 0, 36);
-
-
-		glStencilFunc(GL_NOTEQUAL, 1, 0xFF);
-		glStencilMask(0x00);
-		glDisable(GL_DEPTH_TEST);
-		shaderSingleColor.use();
-		float scale = 1.1;
-
-		glBindVertexArray(cubeVAO);
-		glBindTexture(GL_TEXTURE_2D, cubeTexture);
-		model = glm::mat4();
-		model = glm::translate(model, glm::vec3(-1.0f, 0.0f, -1.0f));
-		model = glm::scale(model, glm::vec3(scale, scale, scale));
-		shaderSingleColor.setMat4("model", model);
-		glDrawArrays(GL_TRIANGLES, 0, 36);
-		model = glm::mat4();
-		model = glm::translate(model, glm::vec3(2.0f, 0.0f, 0.0f));
-		model = glm::scale(model, glm::vec3(scale, scale, scale));
-		shaderSingleColor.setMat4("model", model);
-		glDrawArrays(GL_TRIANGLES, 0, 36);
-		glBindVertexArray(0);
-		glStencilMask(0xFF);
-		glEnable(GL_DEPTH_TEST);
-
+		// windows
+		glBindVertexArray(transparentVAO);
+		glBindTexture(GL_TEXTURE_2D, transparentTexture);
+		for (std::map<float, glm::vec3>::reverse_iterator it = sorted.rbegin(); it != sorted.rend(); ++it)
+		{
+			model = glm::mat4();
+			model = glm::translate(model, it->second);
+			shader.setMat4("model", model);
+			glDrawArrays(GL_TRIANGLES, 0, 6);
+		}
 
 		// check and call events and swap the buffers
 		glfwSwapBuffers(window);
@@ -288,11 +310,18 @@ void initQuixote(GLFWwindow* window, int& error) {
 		return;
 	}
 
+	// depth testing
 	glEnable(GL_DEPTH_TEST);
 	glDepthFunc(GL_LESS);
-	glEnable(GL_STENCIL_TEST);
-	glStencilFunc(GL_NOTEQUAL, 1, 0xFF);
-	glStencilOp(GL_KEEP, GL_KEEP, GL_REPLACE);
+
+	// blending
+	glEnable(GL_BLEND);
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
+	// stencil
+	//glEnable(GL_STENCIL_TEST);
+	//glStencilFunc(GL_NOTEQUAL, 1, 0xFF);
+	//glStencilOp(GL_KEEP, GL_KEEP, GL_REPLACE);
 }
 
 void setBox(Shader &shader, const glm::vec3 cubePositions[], const unsigned int diffuseMap, const unsigned int specularMap, unsigned int &cubeVAO) {

@@ -106,5 +106,11 @@
     <None Include="shaderSingleColor.frag">
       <Filter>Source Files\Shaders</Filter>
     </None>
+    <None Include="Blending.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="Blending.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>
