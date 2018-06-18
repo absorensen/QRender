@@ -153,6 +153,8 @@
     <None Include="DirectionalLight.frag" />
     <None Include="DirectionalLight.vert" />
     <None Include="EmissivePhong.frag" />
+    <None Include="Framebuffers.frag" />
+    <None Include="Framebuffers.vert" />
     <None Include="MultipleLights.frag" />
     <None Include="MultipleLights.vert" />
     <None Include="Phong.frag" />

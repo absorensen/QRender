@@ -112,5 +112,11 @@
     <None Include="Blending.frag">
       <Filter>Source Files\Shaders</Filter>
     </None>
+    <None Include="Framebuffers.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="Framebuffers.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>
