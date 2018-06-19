@@ -118,5 +118,17 @@
     <None Include="Framebuffers.frag">
       <Filter>Source Files\Shaders</Filter>
     </None>
+    <None Include="Skybox.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="Skybox.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="Cubemaps.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="Cubemaps.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

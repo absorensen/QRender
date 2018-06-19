@@ -148,6 +148,10 @@
   <ItemGroup>
     <None Include="Blending.frag" />
     <None Include="Blending.vert" />
+    <None Include="Cubemaps.frag" />
+    <None Include="Cubemaps.vert" />
+    <None Include="Skybox.frag" />
+    <None Include="Skybox.vert" />
     <None Include="DepthTest.frag" />
     <None Include="DepthTest.vert" />
     <None Include="DirectionalLight.frag" />
