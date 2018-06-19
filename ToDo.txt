@@ -4,3 +4,4 @@ Create draw outlined function for objects (stencil testing)
 Face culling set per model/object
 Hot load shaders
 Read up on VAO, VBO and FBO
+Environment Map Exercise (combine enviroment map with normal shading)
