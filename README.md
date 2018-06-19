@@ -74,6 +74,8 @@ https://bartwronski.com/2014/04/07/bokeh-depth-of-field-going-insane-part-1/
 http://gpupro.blogspot.com/2013/09/gpu-pro-4-skylanders-depth-of-field.html
 http://fileadmin.cs.lth.se/cs/education/edan35/lectures/12dof.pdf
 https://developer.nvidia.com/gpugems/GPUGems/gpugems_ch23.html
+http://www.iryoku.com/next-generation-post-processing-in-call-of-duty-advanced-warfare
+http://laplaciansplatting.mpi-inf.mpg.de/laplacian_splatting.pdf
 
 
 Temporal Anti-Aliasing:
