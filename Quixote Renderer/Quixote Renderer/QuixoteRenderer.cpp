@@ -20,47 +20,48 @@ glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
 
 
 float cubeVertices[] = {
-	-0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-	0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-	0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-	0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-	-0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-	-0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
+	// positions         
+	-0.5f, -0.5f, -0.5f,
+	0.5f, -0.5f, -0.5f,
+	0.5f,  0.5f, -0.5f,
+	0.5f,  0.5f, -0.5f,
+	-0.5f,  0.5f, -0.5f,
+	-0.5f, -0.5f, -0.5f,
 
-	-0.5f, -0.5f,  0.5f,  0.0f,  0.0f, 1.0f,
-	0.5f, -0.5f,  0.5f,  0.0f,  0.0f, 1.0f,
-	0.5f,  0.5f,  0.5f,  0.0f,  0.0f, 1.0f,
-	0.5f,  0.5f,  0.5f,  0.0f,  0.0f, 1.0f,
-	-0.5f,  0.5f,  0.5f,  0.0f,  0.0f, 1.0f,
-	-0.5f, -0.5f,  0.5f,  0.0f,  0.0f, 1.0f,
+	-0.5f, -0.5f,  0.5f,
+	0.5f, -0.5f,  0.5f,
+	0.5f,  0.5f,  0.5f,
+	0.5f,  0.5f,  0.5f,
+	-0.5f,  0.5f,  0.5f,
+	-0.5f, -0.5f,  0.5f,
 
-	-0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
-	-0.5f,  0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
-	-0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
-	-0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
-	-0.5f, -0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
-	-0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
+	-0.5f,  0.5f,  0.5f,
+	-0.5f,  0.5f, -0.5f,
+	-0.5f, -0.5f, -0.5f,
+	-0.5f, -0.5f, -0.5f,
+	-0.5f, -0.5f,  0.5f,
+	-0.5f,  0.5f,  0.5f,
 
-	0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
-	0.5f,  0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
-	0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
-	0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
-	0.5f, -0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
-	0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
+	0.5f,  0.5f,  0.5f,
+	0.5f,  0.5f, -0.5f,
+	0.5f, -0.5f, -0.5f,
+	0.5f, -0.5f, -0.5f,
+	0.5f, -0.5f,  0.5f,
+	0.5f,  0.5f,  0.5f,
 
-	-0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
-	0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
-	0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
-	0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
-	-0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
-	-0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
+	-0.5f, -0.5f, -0.5f,
+	0.5f, -0.5f, -0.5f,
+	0.5f, -0.5f,  0.5f,
+	0.5f, -0.5f,  0.5f,
+	-0.5f, -0.5f,  0.5f,
+	-0.5f, -0.5f, -0.5f,
 
-	-0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,
-	0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,
-	0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
-	0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
-	-0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
-	-0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f
+	-0.5f,  0.5f, -0.5f,
+	0.5f,  0.5f, -0.5f,
+	0.5f,  0.5f,  0.5f,
+	0.5f,  0.5f,  0.5f,
+	-0.5f,  0.5f,  0.5f,
+	-0.5f,  0.5f, -0.5f,
 };
 
 float planeVertices[] = {
@@ -209,8 +210,12 @@ int main()
 	//Shader lampShader("Lamp.vert", "Lamp.frag");
 	/*Shader shader("StencilTesting.vert", "StencilTesting.frag");
 	Shader shaderSingleColor("StencilTesting.vert", "shaderSingleColor.frag");*/
-	Shader shader("Cubemaps.vert", "Cubemaps.frag");
-	Shader skyboxShader("Skybox.vert", "Skybox.frag");
+	//Shader shader("Cubemaps.vert", "Cubemaps.frag");
+	//Shader skyboxShader("Skybox.vert", "Skybox.frag");
+	Shader shaderRed("UniformBufferObject.vert", "Red.frag");
+	Shader shaderGreen("UniformBufferObject.vert", "Green.frag");
+	Shader shaderBlue("UniformBufferObject.vert", "Blue.frag");
+	Shader shaderYellow("UniformBufferObject.vert", "Yellow.frag");
 	
 	//Model ourModel("Resources/Models/sponza/sponza.obj");
 
@@ -229,26 +234,35 @@ int main()
 
 	//// position attribute
 	glEnableVertexAttribArray(0);
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
-	
-	//// texcoord attribute
-	glEnableVertexAttribArray(1);
-	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
-	glBindVertexArray(0);
-
-	// skybox VAO
-	unsigned int skyboxVAO, skyboxVBO;
-	glGenVertexArrays(1, &skyboxVAO);
-	glGenBuffers(1, &skyboxVBO);
-	glBindVertexArray(skyboxVAO);
-	glBindBuffer(GL_ARRAY_BUFFER, skyboxVBO);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(skyboxVertices), &skyboxVertices, GL_STATIC_DRAW);
-	glEnableVertexAttribArray(0);
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
 
 
-	unsigned int cubeTexture = loadTexture("Resources/Textures/container.jpg");
-	unsigned int cubemapTexture = loadCubemap(faces);
+	unsigned int uniformBlockIndexRed = glGetUniformBlockIndex(shaderRed.ID, "Matrices");
+	unsigned int uniformBlockIndexGreen = glGetUniformBlockIndex(shaderGreen.ID, "Matrices");
+	unsigned int uniformBlockIndexBlue = glGetUniformBlockIndex(shaderBlue.ID, "Matrices");
+	unsigned int uniformBlockIndexYellow = glGetUniformBlockIndex(shaderYellow.ID, "Matrices");
+
+	glUniformBlockBinding(shaderRed.ID, uniformBlockIndexRed, 0);
+	glUniformBlockBinding(shaderGreen.ID, uniformBlockIndexGreen, 0);
+	glUniformBlockBinding(shaderBlue.ID, uniformBlockIndexBlue, 0);
+	glUniformBlockBinding(shaderYellow.ID, uniformBlockIndexYellow, 0);
+
+	unsigned int uboMatrices;
+	glGenBuffers(1, &uboMatrices);
+	glBindBuffer(GL_UNIFORM_BUFFER, uboMatrices);
+	glBufferData(GL_UNIFORM_BUFFER, 2 * sizeof(glm::mat4), NULL, GL_STATIC_DRAW);
+	glBindBuffer(GL_UNIFORM_BUFFER, 0);
+
+	glBindBufferRange(GL_UNIFORM_BUFFER, 0, uboMatrices, 0, 2 * sizeof(glm::mat4));
+
+	glm::mat4 projection = glm::perspective(45.0f, ASPECT_RATIO, 0.1f, 100.0f);
+	glBindBuffer(GL_UNIFORM_BUFFER, uboMatrices);
+	glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4), glm::value_ptr(projection));
+	glBindBuffer(GL_UNIFORM_BUFFER, 0);
+
+
+	//unsigned int cubeTexture = loadTexture("Resources/Textures/container.jpg");
+	//unsigned int cubemapTexture = loadCubemap(faces);
 
 //	unsigned int transparentTexture = loadTexture("Resources/Textures/blending_transparent_window.png");
 	////unsigned int emissionMap = loadTexture("Resources/Textures/matrix.jpg");
@@ -259,16 +273,16 @@ int main()
 	//lightingShader.setInt("material.specular", 1);
 	////lightingShader.setInt("material.emission", 2);
 
-	shader.use();
-	shader.setInt("skybox", 0);
+	//shader.use();
+	//shader.setInt("skybox", 0);
 
 
-	skyboxShader.use();
-	skyboxShader.setInt("skybox", 0);
+	//skyboxShader.use();
+	//skyboxShader.setInt("skybox", 0);
 
-	glm::mat4 model = glm::mat4(); 
-	glm::mat4 view = glm::mat4();
-	glm::mat4 projection = glm::mat4();
+	//glm::mat4 model = glm::mat4(); 
+	//glm::mat4 view = glm::mat4();
+	//glm::mat4 projection = glm::mat4();
 	// while the window has not been closed
 	while (!glfwWindowShouldClose(window)) {
 		double currentFrame = glfwGetTime();
@@ -282,35 +296,72 @@ int main()
 		glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-		shader.use();
+		glm::mat4 view = camera.GetViewMatrix();
+		glBindBuffer(GL_UNIFORM_BUFFER, uboMatrices);
+		glBufferSubData(GL_UNIFORM_BUFFER, sizeof(glm::mat4), sizeof(glm::mat4), glm::value_ptr(view));
+		glBindBuffer(GL_UNIFORM_BUFFER, 0);
+
+		// RED
+		glBindVertexArray(cubeVAO);
+		shaderRed.use();
+		glm::mat4 model;
+		model = glm::translate(model, glm::vec3(-0.75f, 0.75f, 0.0f));
+		shaderRed.setMat4("model", model);
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		// GREEN
+		glBindVertexArray(cubeVAO);
+		shaderGreen.use();
 		model = glm::mat4();
-		view = camera.GetViewMatrix();
-		projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
-		shader.setMat4("model", model);
-		shader.setMat4("view", view);
-		shader.setMat4("projection", projection);
+		model = glm::translate(model, glm::vec3(0.75f, 0.75f, 0.0f));
+		shaderGreen.setMat4("model", model);
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		// YELLOW
+		glBindVertexArray(cubeVAO);
+		shaderYellow.use();
+		model = glm::mat4();
+		model = glm::translate(model, glm::vec3(-0.75f, -0.75f, 0.0f));
+		shaderYellow.setMat4("model", model);
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		// BLUE
+		glBindVertexArray(cubeVAO);
+		shaderBlue.use();
+		model = glm::mat4();
+		model = glm::translate(model, glm::vec3(0.75f, -0.75f, 0.0f));
+		shaderBlue.setMat4("model", model);
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//shader.use();
+		//model = glm::mat4();
+		//view = camera.GetViewMatrix();
+		//projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
+		//shader.setMat4("model", model);
+		//shader.setMat4("view", view);
+		//shader.setMat4("projection", projection);
 		
 		// cubes
-		glBindVertexArray(cubeVAO);
-		glActiveTexture(GL_TEXTURE0);
-		glBindTexture(GL_TEXTURE_CUBE_MAP, cubemapTexture);
-		glDrawArrays(GL_TRIANGLES, 0, 36);
-		glBindVertexArray(0);
+		//glBindVertexArray(cubeVAO);
+		//glActiveTexture(GL_TEXTURE0);
+		//glBindTexture(GL_TEXTURE_CUBE_MAP, cubemapTexture);
+		//glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
 
-		// draw skybox as last
-		glDepthFunc(GL_LEQUAL);
-		skyboxShader.use();
-		view = glm::mat4(glm::mat3(camera.GetViewMatrix()));
-		skyboxShader.setMat4("view", view);
-		skyboxShader.setMat4("projection", projection);
+		//// draw skybox as last
+		//glDepthFunc(GL_LEQUAL);
+		//skyboxShader.use();
+		//view = glm::mat4(glm::mat3(camera.GetViewMatrix()));
+		//skyboxShader.setMat4("view", view);
+		//skyboxShader.setMat4("projection", projection);
 
-		//skybox cube
-		glBindVertexArray(skyboxVAO);
-		glActiveTexture(GL_TEXTURE0);
-		glBindTexture(GL_TEXTURE_CUBE_MAP, cubemapTexture);
-		glDrawArrays(GL_TRIANGLES, 0, 36);
-		glBindVertexArray(0);
-		glDepthFunc(GL_LESS);
+		////skybox cube
+		//glBindVertexArray(skyboxVAO);
+		//glActiveTexture(GL_TEXTURE0);
+		//glBindTexture(GL_TEXTURE_CUBE_MAP, cubemapTexture);
+		//glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+		//glDepthFunc(GL_LESS);
 
 		// check and call events and swap the buffers
 		glfwSwapBuffers(window);
@@ -319,9 +370,9 @@ int main()
 
 	// de-allocate resources
 	glDeleteVertexArrays(1, &cubeVAO);
-	glDeleteVertexArrays(1, &skyboxVAO);
+	//glDeleteVertexArrays(1, &skyboxVAO);
 	glDeleteBuffers(1, &cubeVBO);
-	glDeleteBuffers(1, &skyboxVBO);
+	//glDeleteBuffers(1, &skyboxVBO);
 
 
 	// deallocate
@@ -354,11 +405,11 @@ void initQuixote(GLFWwindow* window, int& error) {
 
 	// depth testing
 	glEnable(GL_DEPTH_TEST);
-	glDepthFunc(GL_LESS);
+	//glDepthFunc(GL_LESS);
 
 	// blending
-	glEnable(GL_BLEND);
-	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	//glEnable(GL_BLEND);
+	//glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
 	// face culling
 	//glEnable(GL_CULL_FACE);

@@ -130,5 +130,23 @@
     <None Include="Cubemaps.frag">
       <Filter>Source Files\Shaders</Filter>
     </None>
+    <None Include="UniformBufferObject.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="UniformBufferObject.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="Red.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="Green.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="Blue.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="Yellow.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

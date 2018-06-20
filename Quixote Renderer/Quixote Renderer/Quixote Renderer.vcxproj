@@ -148,8 +148,11 @@
   <ItemGroup>
     <None Include="Blending.frag" />
     <None Include="Blending.vert" />
+    <None Include="Blue.frag" />
     <None Include="Cubemaps.frag" />
     <None Include="Cubemaps.vert" />
+    <None Include="Green.frag" />
+    <None Include="Red.frag" />
     <None Include="Skybox.frag" />
     <None Include="Skybox.vert" />
     <None Include="DepthTest.frag" />
@@ -174,6 +177,9 @@
     <None Include="SpotLight.vert" />
     <None Include="StencilTesting.frag" />
     <None Include="StencilTesting.vert" />
+    <None Include="UniformBufferObject.frag" />
+    <None Include="UniformBufferObject.vert" />
+    <None Include="Yellow.frag" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
