@@ -6,7 +6,7 @@ const unsigned int SCR_HEIGHT = 720;
 const float ASPECT_RATIO = ((float)SCR_WIDTH) / SCR_HEIGHT;
 
 // camera
-Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
+Camera camera(glm::vec3(0.0f, 0.0f, 155.0f));
 float lastX = SCR_WIDTH / 2.0f;
 float lastY = SCR_HEIGHT / 2.0f;
 bool firstMouse = true;
@@ -231,47 +231,71 @@ int main()
 	// depth testing
 	glEnable(GL_DEPTH_TEST);
 
-	Shader shader("Instancing.vert", "Instancing.frag");
+	Shader asteroidShader("Asteroids.vert", "Asteroids.frag");
+	Shader planetShader("Planet.vert", "Planet.frag");
 
-	glm::vec2 translations[100];
-	int index = 0;
-	float offset = 0.1f;
-	for (int y = -10; y < 10; y += 2)
+	Model rock("Resources/Models/asteroids/rock.obj");
+	Model planet("Resources/Models/asteroids/planet.obj");
+
+	unsigned int amount = 100000;
+	glm::mat4 *modelMatrices;
+	modelMatrices = new glm::mat4[amount];
+	srand(glfwGetTime());
+	float radius = 150.0f;
+	float offset = 25.0f;
+	for (unsigned int i = 0; i < amount; ++i)
 	{
-		for (int x = -10; x < 10; x += 2)
-		{
-			glm::vec2 translation;
-			translation.x = (float)x / 10.0f + offset;
-			translation.y = (float)y / 10.0f + offset;
-			translations[index++] = translation;
-		}
+		glm::mat4 model;
+		
+		// translate
+		float angle = (float)i / (float)amount * 360.0f;
+		float displacement = (rand() % (int)(2 * offset * 100)) / 100.0f - offset;
+		float x = sin(angle) * radius + displacement;
+		displacement = (rand() % (int)(2 * offset * 100)) / 100.0f - offset;
+		float y = displacement * 0.4f;
+		displacement = (rand() % (int)(2 * offset * 100)) / 100.0f - offset;
+		float z = cos(angle) * radius + displacement;
+		model = glm::translate(model, glm::vec3(x, y, z));
+
+		// scale
+		float scale = (rand() % 20) / 100.0f + 0.05;
+		model = glm::scale(model, glm::vec3(scale));
+
+		// rotation
+		float rotAngle = (rand() % 360);
+		model = glm::rotate(model, rotAngle, glm::vec3(0.4f, 0.6f, 0.8f));
+
+		// add to list of matrices
+		modelMatrices[i] = model;
 	}
 
-	unsigned int instanceVBO;
-	glGenBuffers(1, &instanceVBO);
-	glBindBuffer(GL_ARRAY_BUFFER, instanceVBO);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(glm::vec2) * 100, &translations[0], GL_STATIC_DRAW);
-	glBindBuffer(GL_ARRAY_BUFFER, 0);
+	unsigned int buffer;
+	glGenBuffers(1, &buffer);
+	glBindBuffer(GL_ARRAY_BUFFER, buffer);
+	glBufferData(GL_ARRAY_BUFFER, amount * sizeof(glm::mat4), &modelMatrices[0], GL_STATIC_DRAW);
 
-	unsigned int quadVAO, quadVBO;
-	glGenVertexArrays(1, &quadVAO);
-	glGenBuffers(1, &quadVBO);
-	glBindVertexArray(quadVAO);
-	glBindBuffer(GL_ARRAY_BUFFER, quadVBO);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(quadVertices), quadVertices, GL_STATIC_DRAW);
-	glEnableVertexAttribArray(0);
-	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
-	glEnableVertexAttribArray(0);
-	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
-	glEnableVertexAttribArray(1);
-	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(2 * sizeof(float)));
+	for (unsigned int i = 0; i < rock.meshes.size(); ++i) 
+	{
+		unsigned int VAO = rock.meshes[i].VAO;
+		glBindVertexArray(VAO);
+		GLsizei vec4Size = sizeof(glm::vec4);
+		glEnableVertexAttribArray(3);
+		glVertexAttribPointer(3, 4, GL_FLOAT, GL_FALSE, 4 * vec4Size, (void*)0);
+		glEnableVertexAttribArray(4);
+		glVertexAttribPointer(4, 4, GL_FLOAT, GL_FALSE, 4 * vec4Size, (void*)(vec4Size));
+		glEnableVertexAttribArray(5);
+		glVertexAttribPointer(5, 4, GL_FLOAT, GL_FALSE, 4 * vec4Size, (void*)(2 * vec4Size));
+		glEnableVertexAttribArray(6);
+		glVertexAttribPointer(6, 4, GL_FLOAT, GL_FALSE, 4 * vec4Size, (void*)(3 * vec4Size));
 
-	// instance data
-	glEnableVertexAttribArray(2);
-	glBindBuffer(GL_ARRAY_BUFFER, instanceVBO);
-	glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(float), (void*)0);
-	glBindBuffer(GL_ARRAY_BUFFER, 0);
-	glVertexAttribDivisor(2, 1);
+		glVertexAttribDivisor(3, 1);
+		glVertexAttribDivisor(4, 1);
+		glVertexAttribDivisor(5, 1);
+		glVertexAttribDivisor(6, 1);
+
+		glBindVertexArray(0);
+	}
+
 
 	// while the window has not been closed
 	while (!glfwWindowShouldClose(window)) {
@@ -286,10 +310,32 @@ int main()
 		glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-		shader.use();
-		glBindVertexArray(quadVAO);
-		glDrawArraysInstanced(GL_TRIANGLES, 0, 6, 100);
-		glBindVertexArray(0);
+		glm::mat4 projection = glm::perspective(glm::radians(45.0f), ASPECT_RATIO, 0.1f, 300.0f);
+		glm::mat4 view = camera.GetViewMatrix();
+		asteroidShader.use();
+		asteroidShader.setMat4("projection", projection);
+		asteroidShader.setMat4("view", view);
+
+		planetShader.use();
+		planetShader.setMat4("projection", projection);
+		planetShader.setMat4("view", view);
+
+		glm::mat4 model;
+		model = glm::translate(model, glm::vec3(0.0f, -3.0f, 0.0f));
+		model = glm::scale(model, glm::vec3(4.0f, 4.0f, 4.0f));
+		planetShader.setMat4("model", model);
+		planet.Draw(planetShader);
+
+		asteroidShader.use();
+		asteroidShader.setInt("texture_diffuse1", 0);
+		glActiveTexture(GL_TEXTURE0);
+		glBindTexture(GL_TEXTURE_2D, rock.textures_loaded[0].id);
+
+		for (unsigned int i = 0; i < rock.meshes.size(); ++i) {
+			glBindVertexArray(rock.meshes[i].VAO);
+			glDrawElementsInstanced(GL_TRIANGLES, rock.meshes[i].indices.size(), GL_UNSIGNED_INT, 0, amount);
+			glBindVertexArray(0);
+		}
 
 		// check and call events and swap the buffers
 		glfwSwapBuffers(window);
@@ -297,14 +343,6 @@ int main()
 	}
 
 	// de-allocate resources
-	//glDeleteVertexArrays(1, &cubeVAO);
-	////glDeleteVertexArrays(1, &skyboxVAO);
-	//glDeleteBuffers(1, &cubeVBO);
-	//glDeleteBuffers(1, &skyboxVBO);
-	//glDeleteVertexArrays(1, &VAO);
-	//glDeleteBuffers(1, &VBO);
-	glDeleteVertexArrays(1, &quadVAO);
-	glDeleteBuffers(1, &quadVBO);
 
 	// deallocate
 	glfwTerminate();

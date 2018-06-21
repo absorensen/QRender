@@ -187,5 +187,17 @@
     <None Include="Instancing.vert">
       <Filter>Source Files\Shaders</Filter>
     </None>
+    <None Include="Asteroids.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="Asteroids.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="Planet.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="Planet.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -146,6 +146,8 @@
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Asteroids.frag" />
+    <None Include="Asteroids.vert" />
     <None Include="Blending.frag" />
     <None Include="Blending.vert" />
     <None Include="Blue.frag" />
@@ -160,6 +162,8 @@
     <None Include="Green.frag" />
     <None Include="Instancing.frag" />
     <None Include="Instancing.vert" />
+    <None Include="Planet.frag" />
+    <None Include="Planet.vert" />
     <None Include="Red.frag" />
     <None Include="Skybox.frag" />
     <None Include="Skybox.vert" />
