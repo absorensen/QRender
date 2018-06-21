@@ -148,5 +148,14 @@
     <None Include="Yellow.frag">
       <Filter>Source Files\Shaders</Filter>
     </None>
+    <None Include="FirstGeometry.geom">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="FirstGeometry.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="FirstGeometry.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

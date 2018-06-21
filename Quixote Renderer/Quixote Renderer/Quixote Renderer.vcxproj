@@ -151,6 +151,9 @@
     <None Include="Blue.frag" />
     <None Include="Cubemaps.frag" />
     <None Include="Cubemaps.vert" />
+    <None Include="FirstGeometry.frag" />
+    <None Include="FirstGeometry.geom" />
+    <None Include="FirstGeometry.vert" />
     <None Include="Green.frag" />
     <None Include="Red.frag" />
     <None Include="Skybox.frag" />
