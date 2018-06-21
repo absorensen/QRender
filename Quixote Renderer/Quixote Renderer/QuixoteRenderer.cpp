@@ -174,15 +174,15 @@ std::vector<glm::vec3> windows
 	glm::vec3(0.5f, 0.0f, -0.6f)
 };
 
-float quadVertices[] = { // vertex attributes for a quad that fills the entire screen in Normalized Device Coordinates.
-						 // positions   // texCoords
-	-1.0f,  1.0f,  0.0f, 1.0f,
-	-1.0f, -1.0f,  0.0f, 0.0f,
-	1.0f, -1.0f,  1.0f, 0.0f,
+float quadVertices[] = {
+	// positions     // colors
+	-0.05f,  0.05f,  1.0f, 0.0f, 0.0f,
+	0.05f, -0.05f,  0.0f, 1.0f, 0.0f,
+	-0.05f, -0.05f,  0.0f, 0.0f, 1.0f,
 
-	-1.0f,  1.0f,  0.0f, 1.0f,
-	1.0f, -1.0f,  1.0f, 0.0f,
-	1.0f,  1.0f,  1.0f, 1.0f
+	-0.05f,  0.05f,  1.0f, 0.0f, 0.0f,
+	0.05f, -0.05f,  0.0f, 1.0f, 0.0f,
+	0.05f,  0.05f,  0.0f, 1.0f, 1.0f
 };
 
 std::vector<std::string> faces
@@ -231,99 +231,48 @@ int main()
 	// depth testing
 	glEnable(GL_DEPTH_TEST);
 
-	//Shader lampShader("Lamp.vert", "Lamp.frag");
-	/*Shader shader("StencilTesting.vert", "StencilTesting.frag");
-	Shader shaderSingleColor("StencilTesting.vert", "shaderSingleColor.frag");*/
-	//Shader shader("Cubemaps.vert", "Cubemaps.frag");
-	//Shader skyboxShader("Skybox.vert", "Skybox.frag");
-	//Shader shaderRed("UniformBufferObject.vert", "Red.frag");
-	//Shader shaderGreen("UniformBufferObject.vert", "Green.frag");
-	//Shader shaderBlue("UniformBufferObject.vert", "Blue.frag");
-	//Shader shaderYellow("UniformBufferObject.vert", "Yellow.frag");
+	Shader shader("Instancing.vert", "Instancing.frag");
 
-	Shader shader("VisualizeNormalsModel.vert", "VisualizeNormalsModel.frag");
-	Shader normalShader("VisualizeNormals.vert", "VisualizeNormals.frag", "VisualizeNormals.geom");
+	glm::vec2 translations[100];
+	int index = 0;
+	float offset = 0.1f;
+	for (int y = -10; y < 10; y += 2)
+	{
+		for (int x = -10; x < 10; x += 2)
+		{
+			glm::vec2 translation;
+			translation.x = (float)x / 10.0f + offset;
+			translation.y = (float)y / 10.0f + offset;
+			translations[index++] = translation;
+		}
+	}
 
-	Model nanosuit("Resources/Models/nanosuit/nanosuit.obj");
+	unsigned int instanceVBO;
+	glGenBuffers(1, &instanceVBO);
+	glBindBuffer(GL_ARRAY_BUFFER, instanceVBO);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(glm::vec2) * 100, &translations[0], GL_STATIC_DRAW);
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
 
-	// generate a VAO and VBO, points
-	//unsigned int VBO, VAO;
-	//glGenBuffers(1, &VBO);
-	//glGenVertexArrays(1, &VAO);
-	//glBindVertexArray(VAO);
-	////// bind the new vertex buffer object to the gl_array_buffer
-	//glBindBuffer(GL_ARRAY_BUFFER, VBO);
-	////// copy data to buffer
-	//glBufferData(GL_ARRAY_BUFFER, sizeof(points), &points, GL_STATIC_DRAW);
-	////// position attribute
-	//glEnableVertexAttribArray(0);
-	//glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
+	unsigned int quadVAO, quadVBO;
+	glGenVertexArrays(1, &quadVAO);
+	glGenBuffers(1, &quadVBO);
+	glBindVertexArray(quadVAO);
+	glBindBuffer(GL_ARRAY_BUFFER, quadVBO);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(quadVertices), quadVertices, GL_STATIC_DRAW);
+	glEnableVertexAttribArray(0);
+	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
+	glEnableVertexAttribArray(0);
+	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
+	glEnableVertexAttribArray(1);
+	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(2 * sizeof(float)));
 
-	//glEnableVertexAttribArray(1);
-	//glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(2*sizeof(float)));
-	//glBindVertexArray(0);
+	// instance data
+	glEnableVertexAttribArray(2);
+	glBindBuffer(GL_ARRAY_BUFFER, instanceVBO);
+	glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(float), (void*)0);
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
+	glVertexAttribDivisor(2, 1);
 
-	//// generate a Vertex Array Object
-	//unsigned int cubeVAO, cubeVBO;
-	//glGenVertexArrays(1, &cubeVAO);
-	//glGenBuffers(1, &cubeVBO);
-	//glBindVertexArray(cubeVAO);
-	////// bind the new vertex buffer object to the gl_array_buffer
-	//glBindBuffer(GL_ARRAY_BUFFER, cubeVBO);
-	////// copy data to buffer
-	//glBufferData(GL_ARRAY_BUFFER, sizeof(cubeVertices), &cubeVertices, GL_STATIC_DRAW);
-
-	////// position attribute
-	//glEnableVertexAttribArray(0);
-	//glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
-
-
-	//unsigned int uniformBlockIndexRed = glGetUniformBlockIndex(shaderRed.ID, "Matrices");
-	//unsigned int uniformBlockIndexGreen = glGetUniformBlockIndex(shaderGreen.ID, "Matrices");
-	//unsigned int uniformBlockIndexBlue = glGetUniformBlockIndex(shaderBlue.ID, "Matrices");
-	//unsigned int uniformBlockIndexYellow = glGetUniformBlockIndex(shaderYellow.ID, "Matrices");
-
-	//glUniformBlockBinding(shaderRed.ID, uniformBlockIndexRed, 0);
-	//glUniformBlockBinding(shaderGreen.ID, uniformBlockIndexGreen, 0);
-	//glUniformBlockBinding(shaderBlue.ID, uniformBlockIndexBlue, 0);
-	//glUniformBlockBinding(shaderYellow.ID, uniformBlockIndexYellow, 0);
-
-	//unsigned int uboMatrices;
-	//glGenBuffers(1, &uboMatrices);
-	//glBindBuffer(GL_UNIFORM_BUFFER, uboMatrices);
-	//glBufferData(GL_UNIFORM_BUFFER, 2 * sizeof(glm::mat4), NULL, GL_STATIC_DRAW);
-	//glBindBuffer(GL_UNIFORM_BUFFER, 0);
-
-	//glBindBufferRange(GL_UNIFORM_BUFFER, 0, uboMatrices, 0, 2 * sizeof(glm::mat4));
-
-	//glm::mat4 projection = glm::perspective(45.0f, ASPECT_RATIO, 0.1f, 100.0f);
-	//glBindBuffer(GL_UNIFORM_BUFFER, uboMatrices);
-	//glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4), glm::value_ptr(projection));
-	//glBindBuffer(GL_UNIFORM_BUFFER, 0);
-
-
-	//unsigned int cubeTexture = loadTexture("Resources/Textures/container.jpg");
-	//unsigned int cubemapTexture = loadCubemap(faces);
-
-//	unsigned int transparentTexture = loadTexture("Resources/Textures/blending_transparent_window.png");
-	////unsigned int emissionMap = loadTexture("Resources/Textures/matrix.jpg");
-
-
-	//lightingShader.use();
-	//lightingShader.setInt("material.diffuse", 0);
-	//lightingShader.setInt("material.specular", 1);
-	////lightingShader.setInt("material.emission", 2);
-
-	//shader.use();
-	//shader.setInt("skybox", 0);
-
-
-	//skyboxShader.use();
-	//skyboxShader.setInt("skybox", 0);
-
-	//glm::mat4 model = glm::mat4(); 
-	//glm::mat4 view = glm::mat4();
-	//glm::mat4 projection = glm::mat4();
 	// while the window has not been closed
 	while (!glfwWindowShouldClose(window)) {
 		double currentFrame = glfwGetTime();
@@ -337,96 +286,10 @@ int main()
 		glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-		glm::mat4 projection = glm::perspective(glm::radians(45.0f), ASPECT_RATIO, 1.0f, 100.0f);
-		glm::mat4 view = camera.GetViewMatrix();
-		glm::mat4 model;
-
 		shader.use();
-		shader.setMat4("projection", projection);
-		shader.setMat4("view", view);
-		shader.setMat4("model", model);
-
-		shader.setFloat("time", glfwGetTime());
-
-		nanosuit.Draw(shader);
-
-		normalShader.use();
-		normalShader.setMat4("projection", projection);
-		normalShader.setMat4("view", view);
-		normalShader.setMat4("model", model);
-
-		nanosuit.Draw(normalShader);
-
-		//shader.use();
-		//glBindVertexArray(VAO);
-		//glDrawArrays(GL_POINTS, 0, 4);
-
-		//glm::mat4 view = camera.GetViewMatrix();
-		//glBindBuffer(GL_UNIFORM_BUFFER, uboMatrices);
-		//glBufferSubData(GL_UNIFORM_BUFFER, sizeof(glm::mat4), sizeof(glm::mat4), glm::value_ptr(view));
-		//glBindBuffer(GL_UNIFORM_BUFFER, 0);
-
-		//// RED
-		//glBindVertexArray(cubeVAO);
-		//shaderRed.use();
-		//glm::mat4 model;
-		//model = glm::translate(model, glm::vec3(-0.75f, 0.75f, 0.0f));
-		//shaderRed.setMat4("model", model);
-		//glDrawArrays(GL_TRIANGLES, 0, 36);
-
-		//// GREEN
-		//glBindVertexArray(cubeVAO);
-		//shaderGreen.use();
-		//model = glm::mat4();
-		//model = glm::translate(model, glm::vec3(0.75f, 0.75f, 0.0f));
-		//shaderGreen.setMat4("model", model);
-		//glDrawArrays(GL_TRIANGLES, 0, 36);
-
-		//// YELLOW
-		//glBindVertexArray(cubeVAO);
-		//shaderYellow.use();
-		//model = glm::mat4();
-		//model = glm::translate(model, glm::vec3(-0.75f, -0.75f, 0.0f));
-		//shaderYellow.setMat4("model", model);
-		//glDrawArrays(GL_TRIANGLES, 0, 36);
-
-		//// BLUE
-		//glBindVertexArray(cubeVAO);
-		//shaderBlue.use();
-		//model = glm::mat4();
-		//model = glm::translate(model, glm::vec3(0.75f, -0.75f, 0.0f));
-		//shaderBlue.setMat4("model", model);
-		//glDrawArrays(GL_TRIANGLES, 0, 36);
-
-		//shader.use();
-		//model = glm::mat4();
-		//view = camera.GetViewMatrix();
-		//projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
-		//shader.setMat4("model", model);
-		//shader.setMat4("view", view);
-		//shader.setMat4("projection", projection);
-		
-		// cubes
-		//glBindVertexArray(cubeVAO);
-		//glActiveTexture(GL_TEXTURE0);
-		//glBindTexture(GL_TEXTURE_CUBE_MAP, cubemapTexture);
-		//glDrawArrays(GL_TRIANGLES, 0, 36);
-		//glBindVertexArray(0);
-
-		//// draw skybox as last
-		//glDepthFunc(GL_LEQUAL);
-		//skyboxShader.use();
-		//view = glm::mat4(glm::mat3(camera.GetViewMatrix()));
-		//skyboxShader.setMat4("view", view);
-		//skyboxShader.setMat4("projection", projection);
-
-		////skybox cube
-		//glBindVertexArray(skyboxVAO);
-		//glActiveTexture(GL_TEXTURE0);
-		//glBindTexture(GL_TEXTURE_CUBE_MAP, cubemapTexture);
-		//glDrawArrays(GL_TRIANGLES, 0, 36);
-		//glBindVertexArray(0);
-		//glDepthFunc(GL_LESS);
+		glBindVertexArray(quadVAO);
+		glDrawArraysInstanced(GL_TRIANGLES, 0, 6, 100);
+		glBindVertexArray(0);
 
 		// check and call events and swap the buffers
 		glfwSwapBuffers(window);
@@ -440,6 +303,8 @@ int main()
 	//glDeleteBuffers(1, &skyboxVBO);
 	//glDeleteVertexArrays(1, &VAO);
 	//glDeleteBuffers(1, &VBO);
+	glDeleteVertexArrays(1, &quadVAO);
+	glDeleteBuffers(1, &quadVBO);
 
 	// deallocate
 	glfwTerminate();

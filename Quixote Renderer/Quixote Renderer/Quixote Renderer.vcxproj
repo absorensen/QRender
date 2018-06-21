@@ -158,6 +158,8 @@
     <None Include="FirstGeometry.geom" />
     <None Include="FirstGeometry.vert" />
     <None Include="Green.frag" />
+    <None Include="Instancing.frag" />
+    <None Include="Instancing.vert" />
     <None Include="Red.frag" />
     <None Include="Skybox.frag" />
     <None Include="Skybox.vert" />

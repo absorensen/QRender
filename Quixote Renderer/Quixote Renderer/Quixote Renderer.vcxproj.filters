@@ -181,5 +181,11 @@
     <None Include="VisualizeNormalsModel.frag">
       <Filter>Source Files\Shaders</Filter>
     </None>
+    <None Include="Instancing.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="Instancing.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>
