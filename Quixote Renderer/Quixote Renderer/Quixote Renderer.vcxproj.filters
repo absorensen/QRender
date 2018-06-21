@@ -157,5 +157,29 @@
     <None Include="FirstGeometry.frag">
       <Filter>Source Files\Shaders</Filter>
     </None>
+    <None Include="ExplodingNormals.geom">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="ExplodingNormals.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="ExplodingNormals.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="VisualizeNormals.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="VisualizeNormals.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="VisualizeNormals.geom">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="VisualizeNormalsModel.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="VisualizeNormalsModel.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

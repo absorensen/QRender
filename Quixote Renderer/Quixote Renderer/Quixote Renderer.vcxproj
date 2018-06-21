@@ -151,6 +151,9 @@
     <None Include="Blue.frag" />
     <None Include="Cubemaps.frag" />
     <None Include="Cubemaps.vert" />
+    <None Include="ExplodingNormals.frag" />
+    <None Include="ExplodingNormals.geom" />
+    <None Include="ExplodingNormals.vert" />
     <None Include="FirstGeometry.frag" />
     <None Include="FirstGeometry.geom" />
     <None Include="FirstGeometry.vert" />
@@ -182,6 +185,11 @@
     <None Include="StencilTesting.vert" />
     <None Include="UniformBufferObject.frag" />
     <None Include="UniformBufferObject.vert" />
+    <None Include="VisualizeNormals.frag" />
+    <None Include="VisualizeNormals.geom" />
+    <None Include="VisualizeNormals.vert" />
+    <None Include="VisualizeNormalsModel.frag" />
+    <None Include="VisualizeNormalsModel.vert" />
     <None Include="Yellow.frag" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

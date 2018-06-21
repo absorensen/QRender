@@ -241,26 +241,27 @@ int main()
 	//Shader shaderBlue("UniformBufferObject.vert", "Blue.frag");
 	//Shader shaderYellow("UniformBufferObject.vert", "Yellow.frag");
 
-	Shader shader("FirstGeometry.vert", "FirstGeometry.frag", "FirstGeometry.geom");
+	Shader shader("VisualizeNormalsModel.vert", "VisualizeNormalsModel.frag");
+	Shader normalShader("VisualizeNormals.vert", "VisualizeNormals.frag", "VisualizeNormals.geom");
 
-	//Model ourModel("Resources/Models/sponza/sponza.obj");
+	Model nanosuit("Resources/Models/nanosuit/nanosuit.obj");
 
 	// generate a VAO and VBO, points
-	unsigned int VBO, VAO;
-	glGenBuffers(1, &VBO);
-	glGenVertexArrays(1, &VAO);
-	glBindVertexArray(VAO);
-	//// bind the new vertex buffer object to the gl_array_buffer
-	glBindBuffer(GL_ARRAY_BUFFER, VBO);
-	//// copy data to buffer
-	glBufferData(GL_ARRAY_BUFFER, sizeof(points), &points, GL_STATIC_DRAW);
-	//// position attribute
-	glEnableVertexAttribArray(0);
-	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
+	//unsigned int VBO, VAO;
+	//glGenBuffers(1, &VBO);
+	//glGenVertexArrays(1, &VAO);
+	//glBindVertexArray(VAO);
+	////// bind the new vertex buffer object to the gl_array_buffer
+	//glBindBuffer(GL_ARRAY_BUFFER, VBO);
+	////// copy data to buffer
+	//glBufferData(GL_ARRAY_BUFFER, sizeof(points), &points, GL_STATIC_DRAW);
+	////// position attribute
+	//glEnableVertexAttribArray(0);
+	//glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
 
-	glEnableVertexAttribArray(1);
-	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(2*sizeof(float)));
-	glBindVertexArray(0);
+	//glEnableVertexAttribArray(1);
+	//glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(2*sizeof(float)));
+	//glBindVertexArray(0);
 
 	//// generate a Vertex Array Object
 	//unsigned int cubeVAO, cubeVBO;
@@ -336,9 +337,29 @@ int main()
 		glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+		glm::mat4 projection = glm::perspective(glm::radians(45.0f), ASPECT_RATIO, 1.0f, 100.0f);
+		glm::mat4 view = camera.GetViewMatrix();
+		glm::mat4 model;
+
 		shader.use();
-		glBindVertexArray(VAO);
-		glDrawArrays(GL_POINTS, 0, 4);
+		shader.setMat4("projection", projection);
+		shader.setMat4("view", view);
+		shader.setMat4("model", model);
+
+		shader.setFloat("time", glfwGetTime());
+
+		nanosuit.Draw(shader);
+
+		normalShader.use();
+		normalShader.setMat4("projection", projection);
+		normalShader.setMat4("view", view);
+		normalShader.setMat4("model", model);
+
+		nanosuit.Draw(normalShader);
+
+		//shader.use();
+		//glBindVertexArray(VAO);
+		//glDrawArrays(GL_POINTS, 0, 4);
 
 		//glm::mat4 view = camera.GetViewMatrix();
 		//glBindBuffer(GL_UNIFORM_BUFFER, uboMatrices);
@@ -417,8 +438,8 @@ int main()
 	////glDeleteVertexArrays(1, &skyboxVAO);
 	//glDeleteBuffers(1, &cubeVBO);
 	//glDeleteBuffers(1, &skyboxVBO);
-	glDeleteVertexArrays(1, &VAO);
-	glDeleteBuffers(1, &VBO);
+	//glDeleteVertexArrays(1, &VAO);
+	//glDeleteBuffers(1, &VBO);
 
 	// deallocate
 	glfwTerminate();
