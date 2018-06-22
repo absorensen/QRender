@@ -199,5 +199,17 @@
     <None Include="Planet.frag">
       <Filter>Source Files\Shaders</Filter>
     </None>
+    <None Include="AntiAliasing.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="AntiAliasing.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="AAPost.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="AAPost.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

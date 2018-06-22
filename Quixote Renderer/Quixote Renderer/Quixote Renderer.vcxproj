@@ -146,6 +146,10 @@
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="AAPost.frag" />
+    <None Include="AAPost.vert" />
+    <None Include="AntiAliasing.frag" />
+    <None Include="AntiAliasing.vert" />
     <None Include="Asteroids.frag" />
     <None Include="Asteroids.vert" />
     <None Include="Blending.frag" />
