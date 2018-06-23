@@ -211,5 +211,11 @@
     <None Include="AAPost.vert">
       <Filter>Source Files\Shaders</Filter>
     </None>
+    <None Include="Blinn.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="Blinn.Frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>
