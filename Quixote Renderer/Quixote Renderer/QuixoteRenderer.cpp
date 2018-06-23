@@ -236,7 +236,7 @@ int main()
 	// depth testing
 	glEnable(GL_DEPTH_TEST);
 
-	Shader shader("NormalMapping.vert", "NormalMapping.frag");
+	Shader shader("ParallaxMapping.vert", "ParallaxMapping.frag");
 
 	unsigned int diffuseMap = loadTexture("Resources/Textures/bricks2.jpg");
 	unsigned int normalMap = loadTexture("Resources/Textures/bricks2_normal.jpg");
@@ -274,6 +274,7 @@ int main()
 		shader.setVec3("viewPos", camera.Position);
 		shader.setVec3("lightPos", lightPos);
 		shader.setFloat("heightScale", heightScale);
+		std::cout << heightScale << std::endl;
 		glActiveTexture(GL_TEXTURE0);
 		glBindTexture(GL_TEXTURE_2D, diffuseMap);
 		glActiveTexture(GL_TEXTURE1);
