@@ -256,5 +256,11 @@
     <None Include="NormalMapping.vert">
       <Filter>Source Files\Shaders</Filter>
     </None>
+    <None Include="ParallaxMapping.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="ParallaxMapping.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

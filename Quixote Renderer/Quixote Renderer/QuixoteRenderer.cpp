@@ -22,6 +22,8 @@ unsigned int planeVAO;
 bool shadows = true;
 bool shadowsKeyPressed = false;
 
+float heightScale = 0.1f;
+
 float cubeVertices[] = {
 	// positions       
 	-0.5f, -0.5f, -0.5f,
@@ -236,12 +238,14 @@ int main()
 
 	Shader shader("NormalMapping.vert", "NormalMapping.frag");
 
-	unsigned int diffuseMap = loadTexture("Resources/Textures/brickwall.jpg");
-	unsigned int normalMap = loadTexture("Resources/Textures/brickwall_normal.jpg");
+	unsigned int diffuseMap = loadTexture("Resources/Textures/bricks2.jpg");
+	unsigned int normalMap = loadTexture("Resources/Textures/bricks2_normal.jpg");
+	unsigned int heightMap = loadTexture("Resources/Textures/bricks2_disp.jpg");
 
 	shader.use();
-	shader.setInt("diffuseTexture", 0);
+	shader.setInt("diffuseMap", 0);
 	shader.setInt("normalMap", 1);
+	shader.setInt("depthMap", 2);
 
 
 	glm::vec3 lightPos(0.5f, 1.0f, 0.3f);
@@ -269,10 +273,13 @@ int main()
 		shader.setMat4("model", model);
 		shader.setVec3("viewPos", camera.Position);
 		shader.setVec3("lightPos", lightPos);
+		shader.setFloat("heightScale", heightScale);
 		glActiveTexture(GL_TEXTURE0);
 		glBindTexture(GL_TEXTURE_2D, diffuseMap);
 		glActiveTexture(GL_TEXTURE1);
 		glBindTexture(GL_TEXTURE_2D, normalMap);
+		glActiveTexture(GL_TEXTURE2);
+		glBindTexture(GL_TEXTURE_2D, heightMap);
 		renderQuad();
 
 		model = glm::mat4();
@@ -673,14 +680,19 @@ void processInput(GLFWwindow* window) {
 			camera.ProcessKeyboard(RIGHT, deltaTime);
 	}
 
-	if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS && !shadowsKeyPressed)
+	if (glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS)
 	{
-		shadows = !shadows;
-		shadowsKeyPressed = true;
+		if (heightScale > 0.0f)
+			heightScale -= 0.0005f;
+		else
+			heightScale = 0.0f;
 	}
-	if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_RELEASE)
+	else if (glfwGetKey(window, GLFW_KEY_E) == GLFW_PRESS)
 	{
-		shadowsKeyPressed = false;
+		if (heightScale < 1.0f)
+			heightScale += 0.0005f;
+		else
+			heightScale = 1.0f;
 	}
 
 }

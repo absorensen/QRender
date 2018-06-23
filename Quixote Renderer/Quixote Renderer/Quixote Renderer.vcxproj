@@ -172,6 +172,8 @@
     <None Include="Instancing.vert" />
     <None Include="NormalMapping.frag" />
     <None Include="NormalMapping.vert" />
+    <None Include="ParallaxMapping.frag" />
+    <None Include="ParallaxMapping.vert" />
     <None Include="Planet.frag" />
     <None Include="Planet.vert" />
     <None Include="PointShadow.frag" />
