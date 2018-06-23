@@ -235,5 +235,20 @@
     <None Include="ShadowMapping.frag">
       <Filter>Source Files\Shaders</Filter>
     </None>
+    <None Include="PointShadow.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="PointShadowDepth.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="PointShadow.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="PointShadowDepth.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="PointShadowDepth.geom">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

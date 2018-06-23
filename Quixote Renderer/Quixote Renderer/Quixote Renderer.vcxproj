@@ -172,6 +172,11 @@
     <None Include="Instancing.vert" />
     <None Include="Planet.frag" />
     <None Include="Planet.vert" />
+    <None Include="PointShadow.frag" />
+    <None Include="PointShadow.vert" />
+    <None Include="PointShadowDepth.frag" />
+    <None Include="PointShadowDepth.geom" />
+    <None Include="PointShadowDepth.vert" />
     <None Include="Red.frag" />
     <None Include="ShadowMapping.frag" />
     <None Include="ShadowMapping.vert" />
