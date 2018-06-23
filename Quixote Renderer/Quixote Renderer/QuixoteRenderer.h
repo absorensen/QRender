@@ -28,3 +28,6 @@ void setPointLights(Shader &shader, const glm::vec3 pointLightPositions[], const
 void initQuixote(GLFWwindow* window, int& error);
 unsigned int loadTexture(char const * path);
 unsigned int loadCubemap(std::vector<std::string> faces);
+void renderScene(const Shader &shader);
+void renderCube();
+void renderQuad();

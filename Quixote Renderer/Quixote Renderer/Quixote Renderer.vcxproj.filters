@@ -217,5 +217,23 @@
     <None Include="Blinn.frag">
       <Filter>Source Files\Shaders</Filter>
     </None>
+    <None Include="ShadowMappingDepth.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="ShadowMappingDepth.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="DebugDepthQuad.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="DebugDepthQuad.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="ShadowMapping.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="ShadowMapping.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

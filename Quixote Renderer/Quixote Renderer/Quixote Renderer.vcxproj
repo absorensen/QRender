@@ -159,6 +159,8 @@
     <None Include="Blue.frag" />
     <None Include="Cubemaps.frag" />
     <None Include="Cubemaps.vert" />
+    <None Include="DebugDepthQuad.frag" />
+    <None Include="DebugDepthQuad.vert" />
     <None Include="ExplodingNormals.frag" />
     <None Include="ExplodingNormals.geom" />
     <None Include="ExplodingNormals.vert" />
@@ -171,6 +173,10 @@
     <None Include="Planet.frag" />
     <None Include="Planet.vert" />
     <None Include="Red.frag" />
+    <None Include="ShadowMapping.frag" />
+    <None Include="ShadowMapping.vert" />
+    <None Include="ShadowMappingDepth.frag" />
+    <None Include="ShadowMappingDepth.vert" />
     <None Include="Skybox.frag" />
     <None Include="Skybox.vert" />
     <None Include="DepthTest.frag" />
