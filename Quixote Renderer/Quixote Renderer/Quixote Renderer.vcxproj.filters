@@ -250,5 +250,7 @@
     <None Include="PointShadowDepth.geom">
       <Filter>Source Files\Shaders</Filter>
     </None>
+    <None Include="NormalMapping.vert" />
+    <None Include="NormalMapping.frag" />
   </ItemGroup>
 </Project>

@@ -170,6 +170,8 @@
     <None Include="Green.frag" />
     <None Include="Instancing.frag" />
     <None Include="Instancing.vert" />
+    <None Include="NormalMapping.frag" />
+    <None Include="NormalMapping.vert" />
     <None Include="Planet.frag" />
     <None Include="Planet.vert" />
     <None Include="PointShadow.frag" />
