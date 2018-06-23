@@ -1,23 +1,23 @@
 ﻿  QuixoteRenderer.cpp
-c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(443): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(450): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(452): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(457): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(459): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(464): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(466): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(471): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(473): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(479): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(444): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(451): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(453): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(458): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(460): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(465): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(467): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(472): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(474): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(480): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(484): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(481): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(485): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(486): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(486): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(487): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(494): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(488): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\quixoterenderer.cpp(495): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 LINK : warning LNK4098: defaultlib 'MSVCRTD' conflicts with use of other libs; use /NODEFAULTLIB:library
   Generating code
-  0 of 576 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+  1 of 576 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code

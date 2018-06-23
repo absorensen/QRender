@@ -154,7 +154,7 @@
     <None Include="Asteroids.vert" />
     <None Include="Blending.frag" />
     <None Include="Blending.vert" />
-    <None Include="Blinn.Frag" />
+    <None Include="Blinn.frag" />
     <None Include="Blinn.vert" />
     <None Include="Blue.frag" />
     <None Include="Cubemaps.frag" />

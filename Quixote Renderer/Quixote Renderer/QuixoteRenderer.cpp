@@ -258,6 +258,7 @@ int main()
 
 	glm::vec3 lightPos(0.0f, 0.0f, 0.0f);
 
+
 	// while the window has not been closed
 	while (!glfwWindowShouldClose(window)) {
 		double currentFrame = glfwGetTime();

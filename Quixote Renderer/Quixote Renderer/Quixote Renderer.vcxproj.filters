@@ -214,7 +214,7 @@
     <None Include="Blinn.vert">
       <Filter>Source Files\Shaders</Filter>
     </None>
-    <None Include="Blinn.Frag">
+    <None Include="Blinn.frag">
       <Filter>Source Files\Shaders</Filter>
     </None>
   </ItemGroup>
