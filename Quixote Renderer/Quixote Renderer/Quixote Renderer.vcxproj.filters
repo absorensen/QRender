@@ -262,5 +262,17 @@
     <None Include="ParallaxMapping.frag">
       <Filter>Source Files\Shaders</Filter>
     </None>
+    <None Include="HDRLighting.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="HDRLighting.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="HDR.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="HDR.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>
