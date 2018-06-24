@@ -1,0 +1,2431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\libraries\opengl\include\glm\glm\detail\</FILEPATH>
+      <FILENAME>type_half.inl</FILENAME>
+      <LINE>18</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>glm::detail::uif32::{ctor}</FUNCTION>
+    <DECORATED>??0uif32@detail@glm@@QAE@XZ</DECORATED>
+    <FUNCLINE>18</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>125</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiPlane::{ctor}</FUNCTION>
+    <DECORATED>??0aiPlane@@QAE@XZ</DECORATED>
+    <FUNCLINE>125</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>143</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiRay::{ctor}</FUNCTION>
+    <DECORATED>??0aiRay@@QAE@XZ</DECORATED>
+    <FUNCLINE>143</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>161</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiColor3D::{ctor}</FUNCTION>
+    <DECORATED>??0aiColor3D@@QAE@XZ</DECORATED>
+    <FUNCLINE>161</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>256</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'aiString::data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>aiString::{ctor}</FUNCTION>
+    <DECORATED>??0aiString@@QAE@XZ</DECORATED>
+    <FUNCLINE>256</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>256</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiString::{ctor}</FUNCTION>
+    <DECORATED>??0aiString@@QAE@XZ</DECORATED>
+    <FUNCLINE>256</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>types.h</FILENAME>
+      <LINE>482</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiMemoryInfo::{ctor}</FUNCTION>
+    <DECORATED>??0aiMemoryInfo@@QAE@XZ</DECORATED>
+    <FUNCLINE>482</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>texture.h</FILENAME>
+      <LINE>202</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'aiTexture::achFormatHint' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>aiTexture::{ctor}</FUNCTION>
+    <DECORATED>??0aiTexture@@QAE@XZ</DECORATED>
+    <FUNCLINE>202</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>texture.h</FILENAME>
+      <LINE>202</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiTexture::{ctor}</FUNCTION>
+    <DECORATED>??0aiTexture@@QAE@XZ</DECORATED>
+    <FUNCLINE>202</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>mesh.h</FILENAME>
+      <LINE>139</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiFace::{ctor}</FUNCTION>
+    <DECORATED>??0aiFace@@QAE@XZ</DECORATED>
+    <FUNCLINE>139</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>mesh.h</FILENAME>
+      <LINE>152</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'aiFace::mNumIndices' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>aiFace::{ctor}</FUNCTION>
+    <DECORATED>??0aiFace@@QAE@ABU0@@Z</DECORATED>
+    <FUNCLINE>152</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>mesh.h</FILENAME>
+      <LINE>214</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiVertexWeight::{ctor}</FUNCTION>
+    <DECORATED>??0aiVertexWeight@@QAE@XZ</DECORATED>
+    <FUNCLINE>214</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>mesh.h</FILENAME>
+      <LINE>276</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiBone::{ctor}</FUNCTION>
+    <DECORATED>??0aiBone@@QAE@XZ</DECORATED>
+    <FUNCLINE>276</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>mesh.h</FILENAME>
+      <LINE>284</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'aiBone::mWeights' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>aiBone::{ctor}</FUNCTION>
+    <DECORATED>??0aiBone@@QAE@ABU0@@Z</DECORATED>
+    <FUNCLINE>284</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>mesh.h</FILENAME>
+      <LINE>450</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'aiAnimMesh::mTextureCoords' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>aiAnimMesh::{ctor}</FUNCTION>
+    <DECORATED>??0aiAnimMesh@@QAE@XZ</DECORATED>
+    <FUNCLINE>450</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>mesh.h</FILENAME>
+      <LINE>450</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'aiAnimMesh::mColors' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>aiAnimMesh::{ctor}</FUNCTION>
+    <DECORATED>??0aiAnimMesh@@QAE@XZ</DECORATED>
+    <FUNCLINE>450</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>mesh.h</FILENAME>
+      <LINE>450</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiAnimMesh::{ctor}</FUNCTION>
+    <DECORATED>??0aiAnimMesh@@QAE@XZ</DECORATED>
+    <FUNCLINE>450</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>mesh.h</FILENAME>
+      <LINE>709</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'aiMesh::mTextureCoords' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>aiMesh::{ctor}</FUNCTION>
+    <DECORATED>??0aiMesh@@QAE@XZ</DECORATED>
+    <FUNCLINE>709</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>mesh.h</FILENAME>
+      <LINE>709</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'aiMesh::mColors' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>aiMesh::{ctor}</FUNCTION>
+    <DECORATED>??0aiMesh@@QAE@XZ</DECORATED>
+    <FUNCLINE>709</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>mesh.h</FILENAME>
+      <LINE>709</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'aiMesh::mNumUVComponents' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>aiMesh::{ctor}</FUNCTION>
+    <DECORATED>??0aiMesh@@QAE@XZ</DECORATED>
+    <FUNCLINE>709</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>mesh.h</FILENAME>
+      <LINE>709</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiMesh::{ctor}</FUNCTION>
+    <DECORATED>??0aiMesh@@QAE@XZ</DECORATED>
+    <FUNCLINE>709</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>light.h</FILENAME>
+      <LINE>240</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiLight::{ctor}</FUNCTION>
+    <DECORATED>??0aiLight@@QAE@XZ</DECORATED>
+    <FUNCLINE>240</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>camera.h</FILENAME>
+      <LINE>177</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiCamera::{ctor}</FUNCTION>
+    <DECORATED>??0aiCamera@@QAE@XZ</DECORATED>
+    <FUNCLINE>177</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>material.h</FILENAME>
+      <LINE>486</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiUVTransform::{ctor}</FUNCTION>
+    <DECORATED>??0aiUVTransform@@QAE@XZ</DECORATED>
+    <FUNCLINE>486</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>material.h</FILENAME>
+      <LINE>610</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiMaterialProperty::{ctor}</FUNCTION>
+    <DECORATED>??0aiMaterialProperty@@QAE@XZ</DECORATED>
+    <FUNCLINE>610</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>anim.h</FILENAME>
+      <LINE>73</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiVectorKey::{ctor}</FUNCTION>
+    <DECORATED>??0aiVectorKey@@QAE@XZ</DECORATED>
+    <FUNCLINE>73</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>anim.h</FILENAME>
+      <LINE>118</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiQuatKey::{ctor}</FUNCTION>
+    <DECORATED>??0aiQuatKey@@QAE@XZ</DECORATED>
+    <FUNCLINE>118</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>anim.h</FILENAME>
+      <LINE>165</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiMeshKey::{ctor}</FUNCTION>
+    <DECORATED>??0aiMeshKey@@QAE@XZ</DECORATED>
+    <FUNCLINE>165</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>anim.h</FILENAME>
+      <LINE>212</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiMeshMorphKey::{ctor}</FUNCTION>
+    <DECORATED>??0aiMeshMorphKey@@QAE@XZ</DECORATED>
+    <FUNCLINE>212</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>anim.h</FILENAME>
+      <LINE>326</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiNodeAnim::{ctor}</FUNCTION>
+    <DECORATED>??0aiNodeAnim@@QAE@XZ</DECORATED>
+    <FUNCLINE>326</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>anim.h</FILENAME>
+      <LINE>368</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiMeshAnim::{ctor}</FUNCTION>
+    <DECORATED>??0aiMeshAnim@@QAE@XZ</DECORATED>
+    <FUNCLINE>368</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>anim.h</FILENAME>
+      <LINE>399</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiMeshMorphAnim::{ctor}</FUNCTION>
+    <DECORATED>??0aiMeshMorphAnim@@QAE@XZ</DECORATED>
+    <FUNCLINE>399</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>anim.h</FILENAME>
+      <LINE>453</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiAnimation::{ctor}</FUNCTION>
+    <DECORATED>??0aiAnimation@@QAE@XZ</DECORATED>
+    <FUNCLINE>453</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>metadata.h</FILENAME>
+      <LINE>132</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiMetadata::{ctor}</FUNCTION>
+    <DECORATED>??0aiMetadata@@QAE@XZ</DECORATED>
+    <FUNCLINE>132</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>metadata.h</FILENAME>
+      <LINE>149</LINE>
+      <COLUMN>31</COLUMN>
+    </SFA>
+    <DEFECTCODE>6386</DEFECTCODE>
+    <DESCRIPTION>Buffer overrun while writing to 'mValues':  the writable size is 'mNumProperties*8' bytes, but '16' bytes might be written.</DESCRIPTION>
+    <FUNCTION>aiMetadata::{ctor}</FUNCTION>
+    <DECORATED>??0aiMetadata@@QAE@ABU0@@Z</DECORATED>
+    <FUNCLINE>139</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>140</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>141</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>142</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>143</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>144</LINE>
+        <COLUMN>27</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>144</LINE>
+        <COLUMN>36</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>145</LINE>
+        <COLUMN>23</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>144</LINE>
+        <COLUMN>54</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>144</LINE>
+        <COLUMN>36</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>147</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>148</LINE>
+        <COLUMN>27</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>148</LINE>
+        <COLUMN>36</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Enter this loop, (assume 'i&lt;mNumProperties')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>149</LINE>
+        <COLUMN>31</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>150</LINE>
+        <COLUMN>37</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Assume switch ( 'rhs.mValues[i].mType' ) resolves to case AI_AIVECTOR3D: </MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>185</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>186</LINE>
+        <COLUMN>31</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>187</LINE>
+        <COLUMN>39</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>188</LINE>
+        <COLUMN>39</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>148</LINE>
+        <COLUMN>54</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'i' may equal 1</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>148</LINE>
+        <COLUMN>36</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Continue this loop, (assume 'i&lt;mNumProperties')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>149</LINE>
+        <COLUMN>31</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Invalid write to 'mValues[1]', (writable range is 0 to 0)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>metadata.h</FILENAME>
+      <LINE>153</LINE>
+      <COLUMN>24</COLUMN>
+    </SFA>
+    <DEFECTCODE>6385</DEFECTCODE>
+    <DESCRIPTION>Reading invalid data from 'mValues':  the readable size is 'mNumProperties*8' bytes, but '16' bytes may be read.</DESCRIPTION>
+    <FUNCTION>aiMetadata::{ctor}</FUNCTION>
+    <DECORATED>??0aiMetadata@@QAE@ABU0@@Z</DECORATED>
+    <FUNCLINE>139</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>140</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>141</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>142</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>143</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>144</LINE>
+        <COLUMN>27</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>144</LINE>
+        <COLUMN>36</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>145</LINE>
+        <COLUMN>23</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>144</LINE>
+        <COLUMN>54</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>144</LINE>
+        <COLUMN>36</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>147</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>148</LINE>
+        <COLUMN>27</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>148</LINE>
+        <COLUMN>36</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Enter this loop, (assume 'i&lt;mNumProperties')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>149</LINE>
+        <COLUMN>31</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>150</LINE>
+        <COLUMN>37</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Assume switch ( 'rhs.mValues[i].mType' ) resolves to case AI_AIVECTOR3D: </MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>185</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>186</LINE>
+        <COLUMN>31</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>187</LINE>
+        <COLUMN>39</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>188</LINE>
+        <COLUMN>39</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>148</LINE>
+        <COLUMN>54</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'i' may equal 1</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>148</LINE>
+        <COLUMN>36</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Continue this loop, (assume 'i&lt;mNumProperties')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>149</LINE>
+        <COLUMN>31</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>150</LINE>
+        <COLUMN>37</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Assume switch ( 'rhs.mValues[i].mType' ) resolves to case AI_BOOL: </MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>151</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>152</LINE>
+        <COLUMN>35</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>153</LINE>
+        <COLUMN>24</COLUMN>
+        <KEYEVENT>
+          <ID>6</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'i' is an In/Out argument to 'memcpy' (declared at c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\vcruntime_string.h:40)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+        <FILENAME>metadata.h</FILENAME>
+        <LINE>153</LINE>
+        <COLUMN>24</COLUMN>
+        <KEYEVENT>
+          <ID>7</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Invalid read from 'mValues[1]', (readable range is 0 to 0)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>3727</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>6001</DEFECTCODE>
+    <DESCRIPTION>Using uninitialized memory 'coutput'.</DESCRIPTION>
+    <FUNCTION>load_jpeg_image</FUNCTION>
+    <DECORATED>?load_jpeg_image@@YAPAEPAUstbi__jpeg@@PAH11H@Z</DECORATED>
+    <FUNCLINE>3575</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>3</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3577</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3577</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3577</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3578</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3581</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3584</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3587</LINE>
+        <COLUMN>3</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3589</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3591</LINE>
+        <COLUMN>31</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3594</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3598</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3599</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3599</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3600</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3601</LINE>
+        <COLUMN>11</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'coutput' is not initialized</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3603</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3605</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3605</LINE>
+        <COLUMN>16</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this loop, (assume 'k&lt;decode_n' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3628</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3629</LINE>
+        <COLUMN>6</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this branch, (assume '!output' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3632</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3632</LINE>
+        <COLUMN>16</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Enter this loop, (assume 'j&lt;z-&gt;s-&gt;img_y')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3633</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3634</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3634</LINE>
+        <COLUMN>17</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this loop, (assume 'k&lt;decode_n' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3648</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>6</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this branch, (assume 'n&gt;=3' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3697</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>7</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this branch, (assume 'is_rgb' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3708</LINE>
+        <COLUMN>30</COLUMN>
+        <KEYEVENT>
+          <ID>8</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this branch, (assume '&lt;branch condition&gt;' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3719</LINE>
+        <COLUMN>30</COLUMN>
+        <KEYEVENT>
+          <ID>9</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this branch, (assume '&lt;branch condition&gt;' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>3727</LINE>
+        <COLUMN>13</COLUMN>
+        <KEYEVENT>
+          <ID>10</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'coutput' is used, but may not have been initialized</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>6606</LINE>
+      <COLUMN>21</COLUMN>
+    </SFA>
+    <DEFECTCODE>6308</DEFECTCODE>
+    <DESCRIPTION>'realloc' might return null pointer: assigning null pointer to 'out', which is passed as an argument to 'realloc', will cause the original memory block to be leaked.</DESCRIPTION>
+    <FUNCTION>stbi__load_gif_main</FUNCTION>
+    <DECORATED>?stbi__load_gif_main@@YAPAXPAUstbi__context@@PAPAHPAH222H@Z</DECORATED>
+    <FUNCLINE>6581</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>6608</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>6308</DEFECTCODE>
+    <DESCRIPTION>'realloc' might return null pointer: assigning null pointer to '*delays', which is passed as an argument to 'realloc', will cause the original memory block to be leaked.</DESCRIPTION>
+    <FUNCTION>stbi__load_gif_main</FUNCTION>
+    <DECORATED>?stbi__load_gif_main@@YAPAXPAUstbi__context@@PAPAHPAH222H@Z</DECORATED>
+    <FUNCLINE>6581</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>6581</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>6262</DEFECTCODE>
+    <DESCRIPTION>Function uses '34952' bytes of stack:  exceeds /analyze:stacksize '16384'.  Consider moving some data to heap.</DESCRIPTION>
+    <FUNCTION>stbi__load_gif_main</FUNCTION>
+    <DECORATED>?stbi__load_gif_main@@YAPAXPAUstbi__context@@PAPAHPAH222H@Z</DECORATED>
+    <FUNCLINE>6581</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>6617</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>'out+((((layers-1))*stride))' could be '0':  this does not adhere to the specification for the function 'memcpy'. </DESCRIPTION>
+    <FUNCTION>stbi__load_gif_main</FUNCTION>
+    <DECORATED>?stbi__load_gif_main@@YAPAXPAUstbi__context@@PAPAHPAH222H@Z</DECORATED>
+    <FUNCLINE>6581</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6583</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6584</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6585</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6586</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6587</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6588</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6589</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6590</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6591</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6596</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6597</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6599</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6600</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6601</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6602</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6603</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6605</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6612</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6613</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6617</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6618</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6622</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6626</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6596</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6597</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6599</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6600</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6601</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6602</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6603</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6605</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6606</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'out' may be NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6607</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6617</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'out' is an In/Out argument to 'memcpy' (declared at c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\vcruntime_string.h:40)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6617</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'out+((((layers-1))*stride))' should not be NULL, because this is not consistent with the SAL annotation on 'memcpy'</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>6623</LINE>
+      <COLUMN>28</COLUMN>
+    </SFA>
+    <DEFECTCODE>28182</DEFECTCODE>
+    <DESCRIPTION>Dereferencing NULL pointer. '*delays' contains the same NULL value as 'realloc()`6608' did. </DESCRIPTION>
+    <FUNCTION>stbi__load_gif_main</FUNCTION>
+    <DECORATED>?stbi__load_gif_main@@YAPAXPAUstbi__context@@PAPAHPAH222H@Z</DECORATED>
+    <FUNCLINE>6581</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>3</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6583</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6584</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6585</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6586</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6587</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6588</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6589</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6590</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6591</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6592</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6596</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6597</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6599</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6600</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6601</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6602</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6603</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6605</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6612</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6613</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6614</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6617</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6618</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6622</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6623</LINE>
+        <COLUMN>28</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6626</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6596</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6597</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6599</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6600</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6601</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6602</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6603</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6605</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6606</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6607</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6608</LINE>
+        <COLUMN>14</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'*delays' may be NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6617</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6618</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Enter this branch, (assume 'layers&gt;=2')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6619</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6622</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Enter this branch, (assume 'delays')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>stb_image.h</FILENAME>
+        <LINE>6623</LINE>
+        <COLUMN>28</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'*delays' is dereferenced, but may still be NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>6645</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>6262</DEFECTCODE>
+    <DESCRIPTION>Function uses '34932' bytes of stack:  exceeds /analyze:stacksize '16384'.  Consider moving some data to heap.</DESCRIPTION>
+    <FUNCTION>stbi__gif_load</FUNCTION>
+    <DECORATED>?stbi__gif_load@@YAPAXPAUstbi__context@@PAH11HPAUstbi__result_info@@@Z</DECORATED>
+    <FUNCLINE>6645</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+      <FILENAME>camera.h</FILENAME>
+      <LINE>43</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Camera::{ctor}</FUNCTION>
+    <DECORATED>??0Camera@@QAE@U?$tvec3@M$0A@@glm@@0MM@Z</DECORATED>
+    <FUNCLINE>43</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+      <FILENAME>mesh.h</FILENAME>
+      <LINE>40</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Mesh::VAO' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Mesh::{ctor}</FUNCTION>
+    <DECORATED>??0Mesh@@QAE@V?$vector@UVertex@@V?$allocator@UVertex@@@std@@@std@@V?$vector@IV?$allocator@I@std@@@2@V?$vector@UTexture@@V?$allocator@UTexture@@@std@@@2@@Z</DECORATED>
+    <FUNCLINE>40</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+      <FILENAME>mesh.h</FILENAME>
+      <LINE>40</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Mesh::VBO' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Mesh::{ctor}</FUNCTION>
+    <DECORATED>??0Mesh@@QAE@V?$vector@UVertex@@V?$allocator@UVertex@@@std@@@std@@V?$vector@IV?$allocator@I@std@@@2@V?$vector@UTexture@@V?$allocator@UTexture@@@std@@@2@@Z</DECORATED>
+    <FUNCLINE>40</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+      <FILENAME>mesh.h</FILENAME>
+      <LINE>40</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Mesh::EBO' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Mesh::{ctor}</FUNCTION>
+    <DECORATED>??0Mesh@@QAE@V?$vector@UVertex@@V?$allocator@UVertex@@@std@@@std@@V?$vector@IV?$allocator@I@std@@@2@V?$vector@UTexture@@V?$allocator@UTexture@@@std@@@2@@Z</DECORATED>
+    <FUNCLINE>40</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+      <FILENAME>model.h</FILENAME>
+      <LINE>206</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>6001</DEFECTCODE>
+    <DESCRIPTION>Using uninitialized memory 'format'.</DESCRIPTION>
+    <FUNCTION>Model::TextureFromFile</FUNCTION>
+    <DECORATED>?TextureFromFile@Model@@AAEIPBDABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z</DECORATED>
+    <FUNCLINE>185</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>3</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>model.h</FILENAME>
+        <LINE>187</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>model.h</FILENAME>
+        <LINE>188</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>model.h</FILENAME>
+        <LINE>188</LINE>
+        <COLUMN>23</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>model.h</FILENAME>
+        <LINE>188</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>model.h</FILENAME>
+        <LINE>188</LINE>
+        <COLUMN>29</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>model.h</FILENAME>
+        <LINE>188</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>model.h</FILENAME>
+        <LINE>190</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>model.h</FILENAME>
+        <LINE>191</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>model.h</FILENAME>
+        <LINE>193</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>model.h</FILENAME>
+        <LINE>193</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>model.h</FILENAME>
+        <LINE>193</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>model.h</FILENAME>
+        <LINE>194</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>model.h</FILENAME>
+        <LINE>195</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>model.h</FILENAME>
+        <LINE>197</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'format' is not initialized</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>model.h</FILENAME>
+        <LINE>198</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this branch, (assume 'nrComponents==1' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>model.h</FILENAME>
+        <LINE>200</LINE>
+        <COLUMN>25</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this branch, (assume 'nrComponents==3' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>model.h</FILENAME>
+        <LINE>202</LINE>
+        <COLUMN>25</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this branch, (assume 'nrComponents==4' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>model.h</FILENAME>
+        <LINE>205</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>model.h</FILENAME>
+        <LINE>206</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'format' is used, but may not have been initialized</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+      <FILENAME>mesh.h</FILENAME>
+      <LINE>29</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Texture::id' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Texture::{ctor}</FUNCTION>
+    <DECORATED>??0Texture@@QAE@XZ</DECORATED>
+    <FUNCLINE>29</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+      <FILENAME>quixoterenderer.cpp</FILENAME>
+      <LINE>832</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>6001</DEFECTCODE>
+    <DESCRIPTION>Using uninitialized memory 'format'.</DESCRIPTION>
+    <FUNCTION>loadTexture</FUNCTION>
+    <DECORATED>?loadTexture@@YAIPBD@Z</DECORATED>
+    <FUNCLINE>814</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>3</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>quixoterenderer.cpp</FILENAME>
+        <LINE>816</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>quixoterenderer.cpp</FILENAME>
+        <LINE>817</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>quixoterenderer.cpp</FILENAME>
+        <LINE>819</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>quixoterenderer.cpp</FILENAME>
+        <LINE>819</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>quixoterenderer.cpp</FILENAME>
+        <LINE>819</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>quixoterenderer.cpp</FILENAME>
+        <LINE>820</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>quixoterenderer.cpp</FILENAME>
+        <LINE>821</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>quixoterenderer.cpp</FILENAME>
+        <LINE>823</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'format' is not initialized</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>quixoterenderer.cpp</FILENAME>
+        <LINE>824</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this branch, (assume 'nrComponents==1' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>quixoterenderer.cpp</FILENAME>
+        <LINE>826</LINE>
+        <COLUMN>24</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this branch, (assume 'nrComponents==3' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>quixoterenderer.cpp</FILENAME>
+        <LINE>828</LINE>
+        <COLUMN>24</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this branch, (assume 'nrComponents==4' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>quixoterenderer.cpp</FILENAME>
+        <LINE>831</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\quixote renderer\</FILEPATH>
+        <FILENAME>quixoterenderer.cpp</FILENAME>
+        <LINE>832</LINE>
+        <COLUMN>14</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'format' is used, but may not have been initialized</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>quaternion.h</FILENAME>
+      <LINE>63</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiQuaterniont&lt;float&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$aiQuaterniont@M@@QAE@XZ</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>color4.h</FILENAME>
+      <LINE>62</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiColor4t&lt;float&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$aiColor4t@M@@QAE@XZ</DECORATED>
+    <FUNCLINE>62</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>vector3.h</FILENAME>
+      <LINE>69</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiVector3t&lt;float&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$aiVector3t@M@@QAE@XZ</DECORATED>
+    <FUNCLINE>69</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\libraries\opengl\include\glm\glm\detail\</FILEPATH>
+      <FILENAME>type_vec2.inl</FILENAME>
+      <LINE>23</LINE>
+      <COLUMN>53</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>glm::tvec2&lt;float,0&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$tvec2@M$0A@@glm@@QAE@XZ</DECORATED>
+    <FUNCLINE>23</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\libraries\opengl\include\glm\glm\detail\</FILEPATH>
+      <FILENAME>type_vec3.inl</FILENAME>
+      <LINE>36</LINE>
+      <COLUMN>53</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>glm::tvec3&lt;float,0&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$tvec3@M$0A@@glm@@QAE@XZ</DECORATED>
+    <FUNCLINE>36</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\libraries\opengl\include\glm\glm\detail\</FILEPATH>
+      <FILENAME>type_mat4x4.inl</FILENAME>
+      <LINE>12</LINE>
+      <COLUMN>36</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>glm::tmat4x4&lt;float,0&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$tmat4x4@M$0A@@glm@@QAE@XZ</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\libraries\opengl\include\glm\glm\detail\</FILEPATH>
+      <FILENAME>type_vec4.inl</FILENAME>
+      <LINE>182</LINE>
+      <COLUMN>52</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'glm::tvec4&lt;float,5&gt;::&lt;unnamed-tag&gt;::&lt;unnamed-tag&gt;::x' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>glm::tvec4&lt;float,5&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$tvec4@M$04@glm@@QAE@W4ctor@1@@Z</DECORATED>
+    <FUNCLINE>182</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\libraries\opengl\include\glm\glm\detail\</FILEPATH>
+      <FILENAME>type_vec4.inl</FILENAME>
+      <LINE>182</LINE>
+      <COLUMN>52</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'glm::tvec4&lt;float,5&gt;::&lt;unnamed-tag&gt;::&lt;unnamed-tag&gt;::z' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>glm::tvec4&lt;float,5&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$tvec4@M$04@glm@@QAE@W4ctor@1@@Z</DECORATED>
+    <FUNCLINE>182</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\libraries\opengl\include\glm\glm\detail\</FILEPATH>
+      <FILENAME>type_vec4.inl</FILENAME>
+      <LINE>182</LINE>
+      <COLUMN>52</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'glm::tvec4&lt;float,5&gt;::&lt;unnamed-tag&gt;::&lt;unnamed-tag&gt;::y' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>glm::tvec4&lt;float,5&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$tvec4@M$04@glm@@QAE@W4ctor@1@@Z</DECORATED>
+    <FUNCLINE>182</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\libraries\opengl\include\glm\glm\detail\</FILEPATH>
+      <FILENAME>type_vec4.inl</FILENAME>
+      <LINE>182</LINE>
+      <COLUMN>52</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'glm::tvec4&lt;float,5&gt;::&lt;unnamed-tag&gt;::&lt;unnamed-tag&gt;::w' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>glm::tvec4&lt;float,5&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$tvec4@M$04@glm@@QAE@W4ctor@1@@Z</DECORATED>
+    <FUNCLINE>182</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\libraries\opengl\include\glm\glm\detail\</FILEPATH>
+      <FILENAME>type_vec4.inl</FILENAME>
+      <LINE>182</LINE>
+      <COLUMN>52</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'glm::tvec4&lt;float,5&gt;::&lt;unnamed-tag&gt;::&lt;unnamed-tag&gt;::r' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>glm::tvec4&lt;float,5&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$tvec4@M$04@glm@@QAE@W4ctor@1@@Z</DECORATED>
+    <FUNCLINE>182</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\libraries\opengl\include\glm\glm\detail\</FILEPATH>
+      <FILENAME>type_vec4.inl</FILENAME>
+      <LINE>182</LINE>
+      <COLUMN>52</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'glm::tvec4&lt;float,5&gt;::&lt;unnamed-tag&gt;::&lt;unnamed-tag&gt;::g' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>glm::tvec4&lt;float,5&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$tvec4@M$04@glm@@QAE@W4ctor@1@@Z</DECORATED>
+    <FUNCLINE>182</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\libraries\opengl\include\glm\glm\detail\</FILEPATH>
+      <FILENAME>type_vec4.inl</FILENAME>
+      <LINE>182</LINE>
+      <COLUMN>52</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'glm::tvec4&lt;float,5&gt;::&lt;unnamed-tag&gt;::&lt;unnamed-tag&gt;::b' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>glm::tvec4&lt;float,5&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$tvec4@M$04@glm@@QAE@W4ctor@1@@Z</DECORATED>
+    <FUNCLINE>182</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\libraries\opengl\include\glm\glm\detail\</FILEPATH>
+      <FILENAME>type_vec4.inl</FILENAME>
+      <LINE>182</LINE>
+      <COLUMN>52</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'glm::tvec4&lt;float,5&gt;::&lt;unnamed-tag&gt;::&lt;unnamed-tag&gt;::a' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>glm::tvec4&lt;float,5&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$tvec4@M$04@glm@@QAE@W4ctor@1@@Z</DECORATED>
+    <FUNCLINE>182</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\libraries\opengl\include\glm\glm\detail\</FILEPATH>
+      <FILENAME>type_vec4.inl</FILENAME>
+      <LINE>182</LINE>
+      <COLUMN>52</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'glm::tvec4&lt;float,5&gt;::&lt;unnamed-tag&gt;::&lt;unnamed-tag&gt;::s' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>glm::tvec4&lt;float,5&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$tvec4@M$04@glm@@QAE@W4ctor@1@@Z</DECORATED>
+    <FUNCLINE>182</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\libraries\opengl\include\glm\glm\detail\</FILEPATH>
+      <FILENAME>type_vec4.inl</FILENAME>
+      <LINE>182</LINE>
+      <COLUMN>52</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'glm::tvec4&lt;float,5&gt;::&lt;unnamed-tag&gt;::&lt;unnamed-tag&gt;::t' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>glm::tvec4&lt;float,5&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$tvec4@M$04@glm@@QAE@W4ctor@1@@Z</DECORATED>
+    <FUNCLINE>182</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\libraries\opengl\include\glm\glm\detail\</FILEPATH>
+      <FILENAME>type_vec4.inl</FILENAME>
+      <LINE>182</LINE>
+      <COLUMN>52</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'glm::tvec4&lt;float,5&gt;::&lt;unnamed-tag&gt;::&lt;unnamed-tag&gt;::p' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>glm::tvec4&lt;float,5&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$tvec4@M$04@glm@@QAE@W4ctor@1@@Z</DECORATED>
+    <FUNCLINE>182</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\libraries\opengl\include\glm\glm\detail\</FILEPATH>
+      <FILENAME>type_vec4.inl</FILENAME>
+      <LINE>182</LINE>
+      <COLUMN>52</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'glm::tvec4&lt;float,5&gt;::&lt;unnamed-tag&gt;::&lt;unnamed-tag&gt;::q' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>glm::tvec4&lt;float,5&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$tvec4@M$04@glm@@QAE@W4ctor@1@@Z</DECORATED>
+    <FUNCLINE>182</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\libraries\opengl\include\glm\glm\detail\</FILEPATH>
+      <FILENAME>type_vec4.inl</FILENAME>
+      <LINE>182</LINE>
+      <COLUMN>52</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'glm::tvec4&lt;float,5&gt;::&lt;unnamed-tag&gt;::data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>glm::tvec4&lt;float,5&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$tvec4@M$04@glm@@QAE@W4ctor@1@@Z</DECORATED>
+    <FUNCLINE>182</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\quixoterender\qrender\quixote renderer\external libraries\assimp\include\assimp\</FILEPATH>
+      <FILENAME>matrix4x4.inl</FILENAME>
+      <LINE>63</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>aiMatrix4x4t&lt;float&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$aiMatrix4x4t@M@@QAE@XZ</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\libraries\opengl\include\glm\glm\detail\</FILEPATH>
+      <FILENAME>type_vec4.inl</FILENAME>
+      <LINE>159</LINE>
+      <COLUMN>53</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>glm::tvec4&lt;float,0&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$tvec4@M$0A@@glm@@QAE@XZ</DECORATED>
+    <FUNCLINE>159</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\libraries\opengl\include\glm\glm\detail\</FILEPATH>
+      <FILENAME>type_vec4.inl</FILENAME>
+      <LINE>159</LINE>
+      <COLUMN>53</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>glm::tvec4&lt;float,5&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$tvec4@M$04@glm@@QAE@XZ</DECORATED>
+    <FUNCLINE>159</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\libraries\opengl\include\glm\glm\detail\</FILEPATH>
+      <FILENAME>type_vec4.inl</FILENAME>
+      <LINE>159</LINE>
+      <COLUMN>53</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>glm::tvec4&lt;float,4&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$tvec4@M$03@glm@@QAE@XZ</DECORATED>
+    <FUNCLINE>159</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\projects\libraries\opengl\include\glm\glm\detail\</FILEPATH>
+      <FILENAME>type_vec4.inl</FILENAME>
+      <LINE>159</LINE>
+      <COLUMN>53</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>glm::tvec4&lt;float,3&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$tvec4@M$02@glm@@QAE@XZ</DECORATED>
+    <FUNCLINE>159</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

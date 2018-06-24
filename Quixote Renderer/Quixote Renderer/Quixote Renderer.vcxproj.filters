@@ -274,5 +274,26 @@
     <None Include="HDR.frag">
       <Filter>Source Files\Shaders</Filter>
     </None>
+    <None Include="Bloom.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="Bloom.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="LightBox.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="Blur.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="Blur.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="BloomFinal.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="BloomFinal.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

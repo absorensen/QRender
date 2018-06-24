@@ -156,7 +156,13 @@
     <None Include="Blending.vert" />
     <None Include="Blinn.frag" />
     <None Include="Blinn.vert" />
+    <None Include="Bloom.frag" />
+    <None Include="Bloom.vert" />
+    <None Include="BloomFinal.frag" />
+    <None Include="BloomFinal.vert" />
     <None Include="Blue.frag" />
+    <None Include="Blur.frag" />
+    <None Include="Blur.vert" />
     <None Include="Cubemaps.frag" />
     <None Include="Cubemaps.vert" />
     <None Include="DebugDepthQuad.frag" />
@@ -174,6 +180,7 @@
     <None Include="HDRLighting.vert" />
     <None Include="Instancing.frag" />
     <None Include="Instancing.vert" />
+    <None Include="LightBox.frag" />
     <None Include="NormalMapping.frag" />
     <None Include="NormalMapping.vert" />
     <None Include="ParallaxMapping.frag" />

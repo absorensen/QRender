@@ -3,9 +3,10 @@ Do multiple textures with loaded model by default in the model class
 Create draw outlined function for objects (stencil testing)
 Face culling set per model/object
 Hot load shaders
-Read up on VAO, VBO and FBO
+Read up on VAO, VBO, FBO, RBO, HDR and Gamma Correction
 Environment Map Exercise (combine enviroment map with normal shading)
 Does using glMapBuffer to transfer data to buffers make it run faster (Advanced Data)
 Random number generation
 Stratified Poisson Shadowmapping - http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-16-shadow-mapping/
 HDR - eye adaptation / automatic exposure adjustment
+Filmic Tonemapping - https://www.slideshare.net/ozlael/hable-john-uncharted2-hdr-lighting
