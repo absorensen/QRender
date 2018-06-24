@@ -167,6 +167,12 @@
     <None Include="Cubemaps.vert" />
     <None Include="DebugDepthQuad.frag" />
     <None Include="DebugDepthQuad.vert" />
+    <None Include="DeferredGBuffer.frag" />
+    <None Include="DeferredGBuffer.vert" />
+    <None Include="DeferredLightBox.frag" />
+    <None Include="DeferredLightBox.vert" />
+    <None Include="DeferredShading.frag" />
+    <None Include="DeferredShading.vert" />
     <None Include="ExplodingNormals.frag" />
     <None Include="ExplodingNormals.geom" />
     <None Include="ExplodingNormals.vert" />

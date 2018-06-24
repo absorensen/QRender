@@ -10,3 +10,5 @@ Random number generation
 Stratified Poisson Shadowmapping - http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-16-shadow-mapping/
 HDR - eye adaptation / automatic exposure adjustment
 Filmic Tonemapping - https://www.slideshare.net/ozlael/hable-john-uncharted2-hdr-lighting
+Improve bloom - https://udk-legacy.unrealengine.com/udk/Three/Bloom.html
+Forward+ rendering - https://www.3dgep.com/forward-plus/ _______ https://takahiroharada.files.wordpress.com/2015/04/forward_plus.pdf

@@ -295,5 +295,23 @@
     <None Include="BloomFinal.vert">
       <Filter>Source Files\Shaders</Filter>
     </None>
+    <None Include="DeferredGBuffer.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="DeferredGBuffer.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="DeferredShading.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="DeferredShading.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="DeferredLightBox.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="DeferredLightBox.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>
