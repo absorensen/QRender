@@ -12,3 +12,4 @@ HDR - eye adaptation / automatic exposure adjustment
 Filmic Tonemapping - https://www.slideshare.net/ozlael/hable-john-uncharted2-hdr-lighting
 Improve bloom - https://udk-legacy.unrealengine.com/udk/Three/Bloom.html
 Forward+ rendering - https://www.3dgep.com/forward-plus/ _______ https://takahiroharada.files.wordpress.com/2015/04/forward_plus.pdf
+Physically based rendering in real-time engines: http://blog.selfshadow.com/publications/s2013-shading-course/karis/s2013_pbs_epic_notes_v2.pdf

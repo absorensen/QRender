@@ -32,6 +32,8 @@ unsigned int loadCubemap(std::vector<std::string> faces);
 void renderScene(const Shader &shader);
 void renderCube();
 void renderQuad();
+void renderSphere();
+
 float lerp(float a, float b, float f)
 {
 	return a + f * (b - a);
