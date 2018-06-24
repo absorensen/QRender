@@ -74,3 +74,10 @@ Quixote Renderer/Quixote Renderer/Release/Quixote Renderer.log
 Quixote Renderer/Quixote Renderer/Release/Quixote Renderer.tlog/Quixote Renderer.write.1u.tlog
 Quixote Renderer/Quixote Renderer/Release/QuixoteRenderer.obj
 Quixote Renderer/Quixote Renderer/Release/vc141.pdb
+*.obj
+*.ipch
+*.db
+Quixote Renderer/.vs/Quixote Renderer/v15/.suo
+*.iobj
+*.ipdb
+*.pdb

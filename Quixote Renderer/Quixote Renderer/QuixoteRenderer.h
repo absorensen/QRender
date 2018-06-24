@@ -14,6 +14,7 @@
 #include "stb_image.h"
 #include "Camera.h"
 #include "Model.h"
+#include <random>
 
 void framebufferSizeCallback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
@@ -31,3 +32,7 @@ unsigned int loadCubemap(std::vector<std::string> faces);
 void renderScene(const Shader &shader);
 void renderCube();
 void renderQuad();
+float lerp(float a, float b, float f)
+{
+	return a + f * (b - a);
+}

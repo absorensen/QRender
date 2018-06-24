@@ -313,5 +313,15 @@
     <None Include="DeferredLightBox.frag">
       <Filter>Source Files\Shaders</Filter>
     </None>
+    <None Include="SSAOGeometry.vert">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="SSAOGeometry.frag">
+      <Filter>Source Files\Shaders</Filter>
+    </None>
+    <None Include="SSAO.vert" />
+    <None Include="SSAOLighting.frag" />
+    <None Include="SSAO.frag" />
+    <None Include="SSAOBlur.frag" />
   </ItemGroup>
 </Project>
