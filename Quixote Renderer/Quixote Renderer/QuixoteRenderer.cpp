@@ -54,9 +54,11 @@ int main()
 
 	Shader pbrShader("PBRTextured2.vert", "PBRTextured2.frag");
 	Shader equirectangularToCubemapShader("PBRCubemap.vert", "PBRCubemap.frag");
+	Shader irradianceShader("PBRCubemap.vert", "PBRIrradianceConvolution.frag");
 	Shader backgroundShader("PBRBackground.vert", "PBRBackground.frag");
 
 	pbrShader.use();
+	pbrShader.setInt("irradianceMap", 0);
 	pbrShader.setVec3("albedo", 0.5f, 0.0f, 0.0f);
 	pbrShader.setFloat("ao", 1.0f);
 
@@ -157,6 +159,43 @@ int main()
 		renderCube();
 	}
 	glBindFramebuffer(GL_FRAMEBUFFER, 0);
+
+	// irradiance cubemap
+	unsigned int irradianceMap;
+	glGenTextures(1, &irradianceMap);
+	glBindTexture(GL_TEXTURE_CUBE_MAP, irradianceMap);
+	for (unsigned int i = 0; i < 6; ++i)
+	{
+		glTexImage2D(GL_TEXTURE_CUBE_MAP_POSITIVE_X + i, 0, GL_RGB16F, 32, 32, 0, GL_RGB, GL_FLOAT, nullptr);
+	}
+	glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+	glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+	glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_R, GL_CLAMP_TO_EDGE);
+	glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+	glBindFramebuffer(GL_FRAMEBUFFER, captureFBO);
+	glBindRenderbuffer(GL_RENDERBUFFER, captureRBO);
+	glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH_COMPONENT24, 32, 32);
+
+	// do convolution to create irradiance cubemap
+	irradianceShader.use();
+	irradianceShader.setInt("environmentMap", 0);
+	irradianceShader.setMat4("projection", captureProjection);
+	glActiveTexture(GL_TEXTURE0);
+	glBindTexture(GL_TEXTURE_CUBE_MAP, envCubemap);
+
+	glViewport(0, 0, 32, 32);
+	glBindFramebuffer(GL_FRAMEBUFFER, captureFBO);
+	for (unsigned int i = 0; i < 6; ++i) {
+		irradianceShader.setMat4("view", captureViews[i]);
+		glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_CUBE_MAP_POSITIVE_X + i, irradianceMap, 0);
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+		renderCube();
+	}
+	glBindFramebuffer(GL_FRAMEBUFFER, 0);
+
 
 	// init static shader variables
 	glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), ASPECT_RATIO, 0.1f, 100.0f);
